@@ -74,7 +74,26 @@ void FrontEnd::do_window(const matrix<double>& in_feats,
   // cout << format("in_samp_cnt %d\n") % in_samp_cnt;
   if (do_Hamming) {
     // Hamming windows
+    matrix<double> hamming_window;
+    hamming_window.resize(samp_per_window, 1);
+    for (int ii = 0; ii < samp_per_window; ++ii) {
+      hamming_window(ii, 0) = 0.54f - 0.46f * cos(2.0f * PI * ii / (samp_per_window - 1));
+    }
+    int in_start_idx = 0;
+    for (int out_idx = 0; out_idx < out_frame_cnt; ++out_idx) {
+      for (int ii = 0; ii < samp_per_window; ++ii) {
+        out_feats(out_idx, ii) = in_feats(in_start_idx + ii, 0) * hamming_window(ii, 0); 
+      }
+      in_start_idx += samp_shift;
+    }    
   } else {
+    int in_start_idx = 0;
+    for (int out_idx = 0; out_idx < out_frame_cnt; ++out_idx) {
+      for (int ii = 0; ii < samp_per_window; ++ii) {
+        out_feats(out_idx, ii) = in_feats(in_start_idx + ii, 0);
+      }
+      in_start_idx += samp_shift;
+    }
     // Rectangular window
   }
   //  END_LAB

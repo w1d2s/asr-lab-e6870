@@ -41,6 +41,7 @@ class FrontEnd {
  private:
   /** Stores copy of input parameters. **/
   map<string, string> params_;
+  const double PI =  3.1415926535898f;
 };
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *

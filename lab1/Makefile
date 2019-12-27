@@ -8,7 +8,8 @@ ifeq ($(OPTFLAGS),)
 endif
 
 CXX = g++
-CPPFLAGS = -I/user1/faculty/stanchen/pub/boost
+#CPPFLAGS = -I/user1/faculty/stanchen/pub/boost
+CPPFLAGS = -I/home/wudan14/usr_lib/boost
 CXXFLAGS = -Wall -std=c++11
 LDFLAGS = $(OPTFLAGS)
 LDLIBS = -lm
