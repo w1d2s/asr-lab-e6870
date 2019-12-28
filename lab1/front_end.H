@@ -39,6 +39,21 @@ class FrontEnd {
   void do_dct(const matrix<double>& in_feats, matrix<double>& out_feats) const;
 
  private:
+  /** calculate sqrt(a^2 + b^2) **/
+  inline double cal_magnitude(const double real, const double image) const {
+    return sqrt(real * real + image * image);
+  }
+  /** map frequency to mel freq **/
+  inline double freq_to_mel(const double freq) const {
+    return 1127.0f * log(1.0f + freq / 700.0f);
+  }
+  /** Generate mel bins **/
+  void gen_mel_bins(matrix<double>& mel_bins, 
+                    const double f_mel_max,
+                    const int num_bins,
+                    const int in_dim,
+                    const double sample_period) const;
+
   /** Stores copy of input parameters. **/
   map<string, string> params_;
   const double PI =  3.1415926535898f;

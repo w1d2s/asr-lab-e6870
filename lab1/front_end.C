@@ -187,6 +187,24 @@ void FrontEnd::do_melbin(const matrix<double>& in_feats,
   // cout << format("input dim %d\n") % in_dim_cnt;
 
   // TODO: Optimize the compuatation order to avoid duplicate computation
+  matrix<double> mel_bins;
+  double f_mel_max = freq_to_mel(0.5f / sample_period);
+  gen_mel_bins(mel_bins, f_mel_max, num_bins, in_dim_cnt, sample_period);
+    
+  //cout << format("generate mel bins done!\n");
+
+  for (int ii = 0; ii < in_frame_cnt; ++ii) {
+    for (int jj = 0; jj < out_dim_cnt; ++jj) {
+      out_feats(ii, jj) = 0.0f;
+      for (int kk = 0; kk < in_dim_cnt / 2; ++kk) {
+        double Xf = cal_magnitude(in_feats(ii, 2 * kk), in_feats(ii, 2 * kk + 1));
+        out_feats(ii, jj) += Xf * mel_bins(jj, kk);
+      }
+      if (do_log) {
+        out_feats(ii, jj) = log(out_feats(ii, jj));
+      }
+    }
+  }
 
   //  END_LAB
 }
@@ -254,6 +272,32 @@ void FrontEnd::get_feats(const matrix<double>& inAudio,
     out_feats.swap(curFeats);
   }
   out_feats.swap(curFeats);
+}
+
+/** Generate mel bins **/
+void FrontEnd::gen_mel_bins(matrix<double>& mel_bins,
+                            const double f_mel_max,
+                            const int num_bins,
+                            const int in_dim,
+                            const double sample_period) const {
+  double df = f_mel_max / (num_bins + 1);
+  double slope = 1.0f / df;
+  mel_bins.resize(num_bins, in_dim / 2);
+  //cout << format("mel_bins size : %d, %d\n") % mel_bins.size1() % mel_bins.size2();
+  for (int ii = 0; ii < num_bins; ++ii) {
+    for (int jj = 0; jj < in_dim / 2; ++jj) {
+      double f_mel = freq_to_mel(jj / (in_dim * sample_period));
+      if (f_mel < ii * df || f_mel > (ii + 2) * df) {
+        mel_bins(ii, jj) = 0.0f;
+      } else if (f_mel >= ii * df && f_mel <= (ii + 1) * df) {
+        mel_bins(ii, jj) = slope * f_mel - ii;
+      } else if (f_mel > (ii + 1) * df && f_mel <= (ii + 2) * df) {
+        mel_bins(ii, jj) = -1.0f * slope * f_mel + (ii + 2);
+      } else {
+        cout << format("mel freq range error : f_mel_max = %f, cur_mel_f = %f\n") % f_mel_max % f_mel;
+      }
+    }
+  }
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
