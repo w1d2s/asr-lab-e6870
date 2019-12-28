@@ -240,7 +240,20 @@ void FrontEnd::do_dct(const matrix<double>& in_feats,
   //
   //  See "in_frame_cnt", "in_dim_cnt", and "out_dim_cnt" above
   //  for quantities you will need for this computation.
-  
+ 
+  double coeff = sqrt(2.0f / in_dim_cnt);
+
+  for (int ii = 0; ii < in_frame_cnt; ++ii) {
+    for (int jj = 0; jj < out_dim_cnt; ++jj) {
+      out_feats(ii, jj) = 0.0f;
+      for (int kk = 0; kk < in_dim_cnt; ++kk) {
+        out_feats(ii, jj) += in_feats(ii, kk) * cos(PI * (jj + 1.0f) * (kk + 0.5f) / in_dim_cnt);
+        //out_feats(ii, jj) += in_feats(ii, kk) * cos(PI * jj * (kk - 0.5f) / in_dim_cnt);
+      }
+      out_feats(ii, jj) *= coeff; 
+    }
+  }
+
   //  END_LAB
 }
 
