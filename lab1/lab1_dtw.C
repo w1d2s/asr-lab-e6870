@@ -39,6 +39,43 @@ double ComputeDistance(const matrix<double>& mat_hyp,
   //  Output:
   //      Set "dist" to the total distance between these two utterances.
 
+  const double INF = 0x3f3f3f3f;
+
+  //assert(mat_hyp.size2() == mat_templ.size2())
+  int len_hyp = mat_hyp.size1();
+  int len_templ = mat_templ.size1();
+  
+  matrix<double> dist_buf(len_hyp, len_templ, -1.0f);
+  matrix<double> dp_buf(len_hyp, len_templ, INF);
+
+  dist_buf(0, 0) = EuclideanDistance(mat_hyp, 0, mat_templ, 0);
+  dp_buf(0, 0) = 2.0f * dist_buf(0, 0);
+
+  for (int ii = 0; ii < len_hyp; ++ii) {
+    for (int jj = 0; jj < len_templ; ++jj) {
+      if (dist_buf(ii, jj) < 0) {
+        dist_buf(ii, jj) = EuclideanDistance(mat_hyp, ii, mat_templ, jj);
+      }
+      if (0 <= ii - 1 && 0 <= jj - 1) {
+        dp_buf(ii, jj) = std::min(dp_buf(ii, jj), dp_buf(ii - 1, jj - 1) + 2.0f * dist_buf(ii, jj));
+      }
+      if (0 <= ii - 2 && 0 <= jj - 1) {
+        if (dist_buf(ii - 1, jj) < 0) {
+          dist_buf(ii - 1, jj) = EuclideanDistance(mat_hyp, ii - 1, mat_templ, jj);
+        }
+        dp_buf(ii, jj) = std::min(dp_buf(ii, jj), dp_buf(ii - 2, jj - 1) + 2.0f * dist_buf(ii - 1, jj) + dist_buf(ii, jj));
+      }
+      if (0 <= ii - 1 && 0 <= jj - 2) {
+        if (dist_buf(ii, jj - 1) < 0) {
+          dist_buf(ii, jj - 1) = EuclideanDistance(mat_hyp, ii, mat_templ, jj - 1);
+        }
+        dp_buf(ii, jj) = std::min(dp_buf(ii, jj), dp_buf(ii - 1, jj - 2) + 2.0f * dist_buf(ii, jj - 1) + dist_buf(ii, jj));
+      }
+    }
+  }
+
+  dist = dp_buf(len_hyp - 1, len_templ - 1) / (len_hyp + len_templ);
+
   //  END_LAB
   return dist;
 }
