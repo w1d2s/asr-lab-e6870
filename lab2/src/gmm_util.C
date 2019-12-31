@@ -62,6 +62,18 @@ double GmmStats::add_gmm_count(unsigned gmmIdx, double posterior,
   //      somewhere else at the appropriate time.
 
   // suppose each GMM only has one component
+  
+  // soft counts : N_m += P(m|x_t)
+  m_gaussCounts[gaussIdx] += posterior;
+  
+  for (int ii = 0; ii < dimCnt; ++ii) {
+    // accumulate estimate unnormalized mean(1st order momentum)
+    // miu_m_hat += P(m|x_t) * x_t
+    m_gaussStats1(gaussIdx, ii) += posterior * feats[ii];
+    // accumulate estimate unnormalized uncentered variance(2nd order momentum)
+    // var_m_hat += P(m|x_t) * elementwise_square(x_t)
+    m_gaussStats2(gaussIdx, ii) += posterior * feats[ii] * feats[ii];
+  }
 
   //  END_LAB
   //
@@ -117,6 +129,15 @@ void GmmStats::reestimate() const {
   //
   //      for each dimension of each Gaussian with the reestimated
   //      values of the means and variances.
+
+  for (int ii = 0; ii < gaussCnt; ++ii) {
+    for (int jj = 0; jj < dimCnt; ++jj) {
+      double newMean = m_gaussStats1(ii, jj) / m_gaussCounts[ii];
+      double newVar = m_gaussStats2(ii, jj) / m_gaussCounts[ii] - newMean * newMean;
+      m_gmmSet.set_gaussian_mean(ii, jj, newMean);
+      m_gmmSet.set_gaussian_var(ii, jj, newVar);
+    }
+  }
 
   //  END_LAB
   //
