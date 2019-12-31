@@ -96,6 +96,31 @@ double viterbi(const Graph& graph, const matrix<double>& gmmProbs,
   // assert(graph.get_state_count() == stateCnt);
 
   // 1.Init chart
+  const int startStateIdx = graph.get_start_state();
+  chart(0, startStateIdx).assign(0.0f, -1);  
+
+  for (int t = 0; t < frmCnt; ++t) {
+    for (int s = 0; s < stateCnt; ++s) {
+      double srcLogProb = chart(t, s).get_log_prob(); 
+      int arcCnt = graph.get_arc_count(s);
+      int arcId = graph.get_first_arc_id(s);
+      for (int arcIdx = 0; arcIdx < arcCnt; ++arcIdx) {
+        Arc arc;
+        arcId = graph.get_arc(arcId, arc);
+        int dstStateIdx = arc.get_dst_state();
+        int gmmIdx = arc.get_gmm();
+        double transLogProb = arc.get_log_prob();
+        
+        VitCell& dstVitCell = chart(t + 1, dstStateIdx);
+        double dstLogProb = dstVitCell.get_log_prob();
+       
+        double curLogProb = srcLogProb + transLogProb + gmmProbs(t, gmmIdx);
+        if (curLogProb > dstLogProb) {
+          dstVitCell.assign(curLogProb, arcId - 1);
+        }
+      }
+    }
+  }
 
   // 2.Recursive
 
