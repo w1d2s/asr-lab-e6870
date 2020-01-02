@@ -189,7 +189,7 @@ double forward_backward(const Graph& graph, const matrix<double>& gmmProbs,
         
         double postLogProb = alpha + transLogProb + gmmProbs(t, gmmIdx) + beta;
         postLogProb -= uttLogProb;
-        gmmCountList.push_back(GmmCount(gmmIdx, t, postLogProb));
+        gmmCountList.push_back(GmmCount(gmmIdx, t, exp(postLogProb)));
       }
     }
   }

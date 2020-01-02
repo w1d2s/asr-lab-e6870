@@ -5,20 +5,25 @@ import os
 import sys
 import numpy as np
 
-def load_matrix(file_path):
+def load_matrix_map(file_path):
     buf = []
     with open(file_path, 'r') as f:
         buf = f.readlines()
-    
-    row = int(buf[2].strip().split(' ')[-1])
-    col = int(buf[3].strip().split(' ')[-1])
-    
-    mat_list = []
-    for line in buf[4: ]:
-        row_vec = [float(x) for x in line.strip().split(' ')]
-        mat_list.append(row_vec)
 
-    return np.array(mat_list, dtype = np.float64)
+    matrix_map = {}
+    i = 0
+    while i < len(buf):
+        if buf[i].startswith("% name"):
+            name = buf[i].strip().split(' ')[-1]
+            row = int(buf[i + 2].strip().split(' ')[-1])
+            col = int(buf[i + 3].strip().split(' ')[-1])
+            mat_list = []
+            for line in buf[i + 4: i + 4 + row]:
+                row_vec = [float(x) for x in line.strip().split(' ')]
+                mat_list.append(row_vec)
+            matrix_map[name] = np.array(mat_list, dtype = np.float64)
+            i = i + 4 + row
+    return matrix_map
 
 def cal_diff(mat_1, mat_2):
     if mat_1.shape != mat_2.shape:
@@ -35,10 +40,21 @@ def main(argv):
         print("Usage .py mat-1.dat mat-2.dat")
         return 1
 
-    mat_1 = load_matrix(argv[0])
-    mat_2 = load_matrix(argv[1])
+    mat_1_map = load_matrix_map(argv[0])
+    mat_2_map = load_matrix_map(argv[1])
 
-    return cal_diff(mat_1, mat_2)
+    key_list_1 = mat_1_map.keys()
+    key_list_2 = mat_2_map.keys()
+
+    if len(mat_1_map) != len(mat_2_map):
+        print("matrices number dont agree!")
+        return 1
+
+    for i in range(len(mat_1_map)):
+        print("mat 1 : {0}, mat 2 : {1}".format(key_list_1[i], key_list_2[i]))
+        cal_diff(mat_1_map[key_list_1[i]], mat_2_map[key_list_2[i]])
+    
+    return 0
 
 if __name__ == '__main__':
     sys.exit(main(sys.argv[1: ]))

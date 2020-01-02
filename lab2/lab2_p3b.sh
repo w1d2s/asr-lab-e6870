@@ -10,6 +10,6 @@ fi
 
 
 $binStr --audio_file p018k7.22.dat --graph_file p018k7.22.fsm --iters 1 \
-    --in_gmm p018k1.gmm.dat --out_gmm p3b.gmm
+    --in_gmm p018k1.gmm.dat --out_gmm p3b.gmm --chart_file p3b_chart.dat
 
 
