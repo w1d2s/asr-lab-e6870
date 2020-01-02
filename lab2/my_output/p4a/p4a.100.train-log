@@ -1,0 +1,711 @@
+======================================================================
+Training: 100 sentences.
+======================================================================
+Processing utterance ID: rn:7a
+Processing utterance ID: jr:1b
+Processing utterance ID: cf:3a
+Processing utterance ID: fc:oa
+Processing utterance ID: jt:1a
+Processing utterance ID: nw:za
+Processing utterance ID: fd:5a
+Processing utterance ID: jt:7a
+Processing utterance ID: fc:6a
+Processing utterance ID: ni:ob
+Processing utterance ID: ag:4a
+Processing utterance ID: hl:6b
+Processing utterance ID: if:3b
+Processing utterance ID: fd:1b
+Processing utterance ID: kk:9b
+Processing utterance ID: mb:1a
+Processing utterance ID: aw:ob
+Processing utterance ID: nh:1a
+Processing utterance ID: ne:6a
+Processing utterance ID: ls:7b
+Processing utterance ID: rn:1a
+Processing utterance ID: jp:7b
+Processing utterance ID: ld:4b
+Processing utterance ID: dn:2a
+Processing utterance ID: ca:7a
+Processing utterance ID: fi:3a
+Processing utterance ID: ld:7a
+Processing utterance ID: br:oa
+Processing utterance ID: fd:7a
+Processing utterance ID: re:7a
+Processing utterance ID: ag:1b
+Processing utterance ID: lh:3a
+Processing utterance ID: ls:9b
+Processing utterance ID: ei:8a
+Processing utterance ID: bd:9a
+Processing utterance ID: gr:oa
+Processing utterance ID: pk:4b
+Processing utterance ID: ji:4b
+Processing utterance ID: ld:za
+Processing utterance ID: ag:3a
+Processing utterance ID: mk:4b
+Processing utterance ID: ei:ob
+Processing utterance ID: mb:4a
+Processing utterance ID: fi:oa
+Processing utterance ID: ni:6b
+Processing utterance ID: ld:oa
+Processing utterance ID: ca:zb
+Processing utterance ID: mr:1a
+Processing utterance ID: jp:5a
+Processing utterance ID: lt:5b
+Processing utterance ID: mk:3b
+Processing utterance ID: ag:ob
+Processing utterance ID: gj:8a
+Processing utterance ID: gr:5a
+Processing utterance ID: mr:9a
+Processing utterance ID: nc:za
+Processing utterance ID: mb:1b
+Processing utterance ID: ei:5a
+Processing utterance ID: it:4b
+Processing utterance ID: ca:3a
+Processing utterance ID: ls:4b
+Processing utterance ID: hh:7a
+Processing utterance ID: it:1b
+Processing utterance ID: ei:4b
+Processing utterance ID: ng:za
+Processing utterance ID: fd:6b
+Processing utterance ID: ig:5b
+Processing utterance ID: ld:6a
+Processing utterance ID: nh:4b
+Processing utterance ID: re:8a
+Processing utterance ID: ca:7b
+Processing utterance ID: ng:8a
+Processing utterance ID: eh:7b
+Processing utterance ID: pk:6a
+Processing utterance ID: mp:8b
+Processing utterance ID: pk:9b
+Processing utterance ID: mk:oa
+Processing utterance ID: eh:6b
+Processing utterance ID: ls:1b
+Processing utterance ID: mr:4a
+Processing utterance ID: ji:3a
+Processing utterance ID: eh:1a
+Processing utterance ID: ei:9a
+Processing utterance ID: sj:9a
+Processing utterance ID: ca:8a
+Processing utterance ID: mr:zb
+Processing utterance ID: mp:zb
+Processing utterance ID: sp:9b
+Processing utterance ID: nh:6b
+Processing utterance ID: lh:9a
+Processing utterance ID: ld:2b
+Processing utterance ID: dn:8b
+Processing utterance ID: jr:ob
+Processing utterance ID: if:7a
+Processing utterance ID: ig:7b
+Processing utterance ID: ca:4a
+Processing utterance ID: kk:za
+Processing utterance ID: pk:4a
+Processing utterance ID: dg:1b
+Processing utterance ID: pd:za
+Iteration 1: -24.262297 logprob/frame (9830 frames)
+Processing utterance ID: rn:7a
+Processing utterance ID: jr:1b
+Processing utterance ID: cf:3a
+Processing utterance ID: fc:oa
+Processing utterance ID: jt:1a
+Processing utterance ID: nw:za
+Processing utterance ID: fd:5a
+Processing utterance ID: jt:7a
+Processing utterance ID: fc:6a
+Processing utterance ID: ni:ob
+Processing utterance ID: ag:4a
+Processing utterance ID: hl:6b
+Processing utterance ID: if:3b
+Processing utterance ID: fd:1b
+Processing utterance ID: kk:9b
+Processing utterance ID: mb:1a
+Processing utterance ID: aw:ob
+Processing utterance ID: nh:1a
+Processing utterance ID: ne:6a
+Processing utterance ID: ls:7b
+Processing utterance ID: rn:1a
+Processing utterance ID: jp:7b
+Processing utterance ID: ld:4b
+Processing utterance ID: dn:2a
+Processing utterance ID: ca:7a
+Processing utterance ID: fi:3a
+Processing utterance ID: ld:7a
+Processing utterance ID: br:oa
+Processing utterance ID: fd:7a
+Processing utterance ID: re:7a
+Processing utterance ID: ag:1b
+Processing utterance ID: lh:3a
+Processing utterance ID: ls:9b
+Processing utterance ID: ei:8a
+Processing utterance ID: bd:9a
+Processing utterance ID: gr:oa
+Processing utterance ID: pk:4b
+Processing utterance ID: ji:4b
+Processing utterance ID: ld:za
+Processing utterance ID: ag:3a
+Processing utterance ID: mk:4b
+Processing utterance ID: ei:ob
+Processing utterance ID: mb:4a
+Processing utterance ID: fi:oa
+Processing utterance ID: ni:6b
+Processing utterance ID: ld:oa
+Processing utterance ID: ca:zb
+Processing utterance ID: mr:1a
+Processing utterance ID: jp:5a
+Processing utterance ID: lt:5b
+Processing utterance ID: mk:3b
+Processing utterance ID: ag:ob
+Processing utterance ID: gj:8a
+Processing utterance ID: gr:5a
+Processing utterance ID: mr:9a
+Processing utterance ID: nc:za
+Processing utterance ID: mb:1b
+Processing utterance ID: ei:5a
+Processing utterance ID: it:4b
+Processing utterance ID: ca:3a
+Processing utterance ID: ls:4b
+Processing utterance ID: hh:7a
+Processing utterance ID: it:1b
+Processing utterance ID: ei:4b
+Processing utterance ID: ng:za
+Processing utterance ID: fd:6b
+Processing utterance ID: ig:5b
+Processing utterance ID: ld:6a
+Processing utterance ID: nh:4b
+Processing utterance ID: re:8a
+Processing utterance ID: ca:7b
+Processing utterance ID: ng:8a
+Processing utterance ID: eh:7b
+Processing utterance ID: pk:6a
+Processing utterance ID: mp:8b
+Processing utterance ID: pk:9b
+Processing utterance ID: mk:oa
+Processing utterance ID: eh:6b
+Processing utterance ID: ls:1b
+Processing utterance ID: mr:4a
+Processing utterance ID: ji:3a
+Processing utterance ID: eh:1a
+Processing utterance ID: ei:9a
+Processing utterance ID: sj:9a
+Processing utterance ID: ca:8a
+Processing utterance ID: mr:zb
+Processing utterance ID: mp:zb
+Processing utterance ID: sp:9b
+Processing utterance ID: nh:6b
+Processing utterance ID: lh:9a
+Processing utterance ID: ld:2b
+Processing utterance ID: dn:8b
+Processing utterance ID: jr:ob
+Processing utterance ID: if:7a
+Processing utterance ID: ig:7b
+Processing utterance ID: ca:4a
+Processing utterance ID: kk:za
+Processing utterance ID: pk:4a
+Processing utterance ID: dg:1b
+Processing utterance ID: pd:za
+Iteration 2: -12.329475 logprob/frame (9830 frames)
+Processing utterance ID: rn:7a
+Processing utterance ID: jr:1b
+Processing utterance ID: cf:3a
+Processing utterance ID: fc:oa
+Processing utterance ID: jt:1a
+Processing utterance ID: nw:za
+Processing utterance ID: fd:5a
+Processing utterance ID: jt:7a
+Processing utterance ID: fc:6a
+Processing utterance ID: ni:ob
+Processing utterance ID: ag:4a
+Processing utterance ID: hl:6b
+Processing utterance ID: if:3b
+Processing utterance ID: fd:1b
+Processing utterance ID: kk:9b
+Processing utterance ID: mb:1a
+Processing utterance ID: aw:ob
+Processing utterance ID: nh:1a
+Processing utterance ID: ne:6a
+Processing utterance ID: ls:7b
+Processing utterance ID: rn:1a
+Processing utterance ID: jp:7b
+Processing utterance ID: ld:4b
+Processing utterance ID: dn:2a
+Processing utterance ID: ca:7a
+Processing utterance ID: fi:3a
+Processing utterance ID: ld:7a
+Processing utterance ID: br:oa
+Processing utterance ID: fd:7a
+Processing utterance ID: re:7a
+Processing utterance ID: ag:1b
+Processing utterance ID: lh:3a
+Processing utterance ID: ls:9b
+Processing utterance ID: ei:8a
+Processing utterance ID: bd:9a
+Processing utterance ID: gr:oa
+Processing utterance ID: pk:4b
+Processing utterance ID: ji:4b
+Processing utterance ID: ld:za
+Processing utterance ID: ag:3a
+Processing utterance ID: mk:4b
+Processing utterance ID: ei:ob
+Processing utterance ID: mb:4a
+Processing utterance ID: fi:oa
+Processing utterance ID: ni:6b
+Processing utterance ID: ld:oa
+Processing utterance ID: ca:zb
+Processing utterance ID: mr:1a
+Processing utterance ID: jp:5a
+Processing utterance ID: lt:5b
+Processing utterance ID: mk:3b
+Processing utterance ID: ag:ob
+Processing utterance ID: gj:8a
+Processing utterance ID: gr:5a
+Processing utterance ID: mr:9a
+Processing utterance ID: nc:za
+Processing utterance ID: mb:1b
+Processing utterance ID: ei:5a
+Processing utterance ID: it:4b
+Processing utterance ID: ca:3a
+Processing utterance ID: ls:4b
+Processing utterance ID: hh:7a
+Processing utterance ID: it:1b
+Processing utterance ID: ei:4b
+Processing utterance ID: ng:za
+Processing utterance ID: fd:6b
+Processing utterance ID: ig:5b
+Processing utterance ID: ld:6a
+Processing utterance ID: nh:4b
+Processing utterance ID: re:8a
+Processing utterance ID: ca:7b
+Processing utterance ID: ng:8a
+Processing utterance ID: eh:7b
+Processing utterance ID: pk:6a
+Processing utterance ID: mp:8b
+Processing utterance ID: pk:9b
+Processing utterance ID: mk:oa
+Processing utterance ID: eh:6b
+Processing utterance ID: ls:1b
+Processing utterance ID: mr:4a
+Processing utterance ID: ji:3a
+Processing utterance ID: eh:1a
+Processing utterance ID: ei:9a
+Processing utterance ID: sj:9a
+Processing utterance ID: ca:8a
+Processing utterance ID: mr:zb
+Processing utterance ID: mp:zb
+Processing utterance ID: sp:9b
+Processing utterance ID: nh:6b
+Processing utterance ID: lh:9a
+Processing utterance ID: ld:2b
+Processing utterance ID: dn:8b
+Processing utterance ID: jr:ob
+Processing utterance ID: if:7a
+Processing utterance ID: ig:7b
+Processing utterance ID: ca:4a
+Processing utterance ID: kk:za
+Processing utterance ID: pk:4a
+Processing utterance ID: dg:1b
+Processing utterance ID: pd:za
+Iteration 3: -10.457453 logprob/frame (9830 frames)
+Processing utterance ID: rn:7a
+Processing utterance ID: jr:1b
+Processing utterance ID: cf:3a
+Processing utterance ID: fc:oa
+Processing utterance ID: jt:1a
+Processing utterance ID: nw:za
+Processing utterance ID: fd:5a
+Processing utterance ID: jt:7a
+Processing utterance ID: fc:6a
+Processing utterance ID: ni:ob
+Processing utterance ID: ag:4a
+Processing utterance ID: hl:6b
+Processing utterance ID: if:3b
+Processing utterance ID: fd:1b
+Processing utterance ID: kk:9b
+Processing utterance ID: mb:1a
+Processing utterance ID: aw:ob
+Processing utterance ID: nh:1a
+Processing utterance ID: ne:6a
+Processing utterance ID: ls:7b
+Processing utterance ID: rn:1a
+Processing utterance ID: jp:7b
+Processing utterance ID: ld:4b
+Processing utterance ID: dn:2a
+Processing utterance ID: ca:7a
+Processing utterance ID: fi:3a
+Processing utterance ID: ld:7a
+Processing utterance ID: br:oa
+Processing utterance ID: fd:7a
+Processing utterance ID: re:7a
+Processing utterance ID: ag:1b
+Processing utterance ID: lh:3a
+Processing utterance ID: ls:9b
+Processing utterance ID: ei:8a
+Processing utterance ID: bd:9a
+Processing utterance ID: gr:oa
+Processing utterance ID: pk:4b
+Processing utterance ID: ji:4b
+Processing utterance ID: ld:za
+Processing utterance ID: ag:3a
+Processing utterance ID: mk:4b
+Processing utterance ID: ei:ob
+Processing utterance ID: mb:4a
+Processing utterance ID: fi:oa
+Processing utterance ID: ni:6b
+Processing utterance ID: ld:oa
+Processing utterance ID: ca:zb
+Processing utterance ID: mr:1a
+Processing utterance ID: jp:5a
+Processing utterance ID: lt:5b
+Processing utterance ID: mk:3b
+Processing utterance ID: ag:ob
+Processing utterance ID: gj:8a
+Processing utterance ID: gr:5a
+Processing utterance ID: mr:9a
+Processing utterance ID: nc:za
+Processing utterance ID: mb:1b
+Processing utterance ID: ei:5a
+Processing utterance ID: it:4b
+Processing utterance ID: ca:3a
+Processing utterance ID: ls:4b
+Processing utterance ID: hh:7a
+Processing utterance ID: it:1b
+Processing utterance ID: ei:4b
+Processing utterance ID: ng:za
+Processing utterance ID: fd:6b
+Processing utterance ID: ig:5b
+Processing utterance ID: ld:6a
+Processing utterance ID: nh:4b
+Processing utterance ID: re:8a
+Processing utterance ID: ca:7b
+Processing utterance ID: ng:8a
+Processing utterance ID: eh:7b
+Processing utterance ID: pk:6a
+Processing utterance ID: mp:8b
+Processing utterance ID: pk:9b
+Processing utterance ID: mk:oa
+Processing utterance ID: eh:6b
+Processing utterance ID: ls:1b
+Processing utterance ID: mr:4a
+Processing utterance ID: ji:3a
+Processing utterance ID: eh:1a
+Processing utterance ID: ei:9a
+Processing utterance ID: sj:9a
+Processing utterance ID: ca:8a
+Processing utterance ID: mr:zb
+Processing utterance ID: mp:zb
+Processing utterance ID: sp:9b
+Processing utterance ID: nh:6b
+Processing utterance ID: lh:9a
+Processing utterance ID: ld:2b
+Processing utterance ID: dn:8b
+Processing utterance ID: jr:ob
+Processing utterance ID: if:7a
+Processing utterance ID: ig:7b
+Processing utterance ID: ca:4a
+Processing utterance ID: kk:za
+Processing utterance ID: pk:4a
+Processing utterance ID: dg:1b
+Processing utterance ID: pd:za
+Iteration 4: -9.942066 logprob/frame (9830 frames)
+Processing utterance ID: rn:7a
+Processing utterance ID: jr:1b
+Processing utterance ID: cf:3a
+Processing utterance ID: fc:oa
+Processing utterance ID: jt:1a
+Processing utterance ID: nw:za
+Processing utterance ID: fd:5a
+Processing utterance ID: jt:7a
+Processing utterance ID: fc:6a
+Processing utterance ID: ni:ob
+Processing utterance ID: ag:4a
+Processing utterance ID: hl:6b
+Processing utterance ID: if:3b
+Processing utterance ID: fd:1b
+Processing utterance ID: kk:9b
+Processing utterance ID: mb:1a
+Processing utterance ID: aw:ob
+Processing utterance ID: nh:1a
+Processing utterance ID: ne:6a
+Processing utterance ID: ls:7b
+Processing utterance ID: rn:1a
+Processing utterance ID: jp:7b
+Processing utterance ID: ld:4b
+Processing utterance ID: dn:2a
+Processing utterance ID: ca:7a
+Processing utterance ID: fi:3a
+Processing utterance ID: ld:7a
+Processing utterance ID: br:oa
+Processing utterance ID: fd:7a
+Processing utterance ID: re:7a
+Processing utterance ID: ag:1b
+Processing utterance ID: lh:3a
+Processing utterance ID: ls:9b
+Processing utterance ID: ei:8a
+Processing utterance ID: bd:9a
+Processing utterance ID: gr:oa
+Processing utterance ID: pk:4b
+Processing utterance ID: ji:4b
+Processing utterance ID: ld:za
+Processing utterance ID: ag:3a
+Processing utterance ID: mk:4b
+Processing utterance ID: ei:ob
+Processing utterance ID: mb:4a
+Processing utterance ID: fi:oa
+Processing utterance ID: ni:6b
+Processing utterance ID: ld:oa
+Processing utterance ID: ca:zb
+Processing utterance ID: mr:1a
+Processing utterance ID: jp:5a
+Processing utterance ID: lt:5b
+Processing utterance ID: mk:3b
+Processing utterance ID: ag:ob
+Processing utterance ID: gj:8a
+Processing utterance ID: gr:5a
+Processing utterance ID: mr:9a
+Processing utterance ID: nc:za
+Processing utterance ID: mb:1b
+Processing utterance ID: ei:5a
+Processing utterance ID: it:4b
+Processing utterance ID: ca:3a
+Processing utterance ID: ls:4b
+Processing utterance ID: hh:7a
+Processing utterance ID: it:1b
+Processing utterance ID: ei:4b
+Processing utterance ID: ng:za
+Processing utterance ID: fd:6b
+Processing utterance ID: ig:5b
+Processing utterance ID: ld:6a
+Processing utterance ID: nh:4b
+Processing utterance ID: re:8a
+Processing utterance ID: ca:7b
+Processing utterance ID: ng:8a
+Processing utterance ID: eh:7b
+Processing utterance ID: pk:6a
+Processing utterance ID: mp:8b
+Processing utterance ID: pk:9b
+Processing utterance ID: mk:oa
+Processing utterance ID: eh:6b
+Processing utterance ID: ls:1b
+Processing utterance ID: mr:4a
+Processing utterance ID: ji:3a
+Processing utterance ID: eh:1a
+Processing utterance ID: ei:9a
+Processing utterance ID: sj:9a
+Processing utterance ID: ca:8a
+Processing utterance ID: mr:zb
+Processing utterance ID: mp:zb
+Processing utterance ID: sp:9b
+Processing utterance ID: nh:6b
+Processing utterance ID: lh:9a
+Processing utterance ID: ld:2b
+Processing utterance ID: dn:8b
+Processing utterance ID: jr:ob
+Processing utterance ID: if:7a
+Processing utterance ID: ig:7b
+Processing utterance ID: ca:4a
+Processing utterance ID: kk:za
+Processing utterance ID: pk:4a
+Processing utterance ID: dg:1b
+Processing utterance ID: pd:za
+Iteration 5: -9.773134 logprob/frame (9830 frames)
+Decoding ...
+Processing utterance ID: es:1
+  Output: ~SIL ONE ~SIL
+Processing utterance ID: es:2
+  Output: ~SIL THREE ~SIL
+Processing utterance ID: es:3
+  Output: ~SIL THREE ~SIL
+Processing utterance ID: es:4
+  Output: ~SIL FOUR ~SIL
+Processing utterance ID: es:5
+  Output: ~SIL NINE ~SIL
+Processing utterance ID: es:6
+  Output: ~SIL SIX ~SIL
+Processing utterance ID: es:7
+  Output: ~SIL SEVEN ~SIL
+Processing utterance ID: es:8
+  Output: ~SIL EIGHT ~SIL
+Processing utterance ID: es:9
+  Output: ~SIL NINE
+Processing utterance ID: es:o
+  Output: ~SIL OH ~SIL
+Processing utterance ID: es:z
+  Output: ~SIL ZERO ~SIL
+Processing utterance ID: kc:1
+  Output: ~SIL ONE ~SIL
+Processing utterance ID: kc:2
+  Output: ~SIL SEVEN
+Processing utterance ID: kc:3
+  Output: ~SIL THREE ~SIL
+Processing utterance ID: kc:4
+  Output: ~SIL FOUR ~SIL
+Processing utterance ID: kc:5
+  Output: ~SIL FIVE ~SIL
+Processing utterance ID: kc:6
+  Output: SEVEN ~SIL
+Processing utterance ID: kc:7
+  Output: SEVEN ~SIL
+Processing utterance ID: kc:8
+  Output: ~SIL EIGHT ~SIL
+Processing utterance ID: kc:9
+  Output: ~SIL ONE ~SIL
+Processing utterance ID: kc:o
+  Output: ~SIL OH ~SIL
+Processing utterance ID: kc:z
+  Output: ~SIL ZERO
+Processing utterance ID: fl:1
+  Output: ~SIL ONE ~SIL
+Processing utterance ID: fl:2
+  Output: ~SIL ONE ~SIL
+Processing utterance ID: fl:3
+  Output: ~SIL THREE ~SIL
+Processing utterance ID: fl:4
+  Output: ~SIL ONE
+Processing utterance ID: fl:5
+  Output: ~SIL ONE ~SIL
+Processing utterance ID: fl:6
+  Output: ~SIL SIX ~SIL
+Processing utterance ID: fl:7
+  Output: ~SIL SEVEN ~SIL
+Processing utterance ID: fl:8
+  Output: ~SIL THREE ~SIL
+Processing utterance ID: fl:9
+  Output: ~SIL ONE ~SIL
+Processing utterance ID: fl:o
+  Output: ~SIL ONE
+Processing utterance ID: fl:z
+  Output: ~SIL ZERO ~SIL
+Processing utterance ID: aj:1
+  Output: ~SIL ONE
+Processing utterance ID: aj:2
+  Output: ZERO ~SIL
+Processing utterance ID: aj:3
+  Output: ~SIL THREE ~SIL
+Processing utterance ID: aj:4
+  Output: FOUR ~SIL
+Processing utterance ID: aj:5
+  Output: ~SIL OH ~SIL
+Processing utterance ID: aj:6
+  Output: ~SIL SIX ~SIL
+Processing utterance ID: aj:7
+  Output: ~SIL SEVEN ~SIL
+Processing utterance ID: aj:8
+  Output: ~SIL SIX ~SIL
+Processing utterance ID: aj:9
+  Output: ~SIL ONE ~SIL
+Processing utterance ID: aj:o
+  Output: ~SIL OH ~SIL
+Processing utterance ID: aj:z
+  Output: ~SIL ZERO ~SIL
+Processing utterance ID: an:1
+  Output: ~SIL NINE ~SIL
+Processing utterance ID: an:2
+  Output: ~SIL ZERO ~SIL
+Processing utterance ID: an:3
+  Output: ~SIL THREE ~SIL
+Processing utterance ID: an:4
+  Output: ~SIL FOUR ~SIL
+Processing utterance ID: an:5
+  Output: ~SIL ONE ~SIL
+Processing utterance ID: an:6
+  Output: ~SIL SIX ~SIL
+Processing utterance ID: an:7
+  Output: ~SIL SEVEN ~SIL
+Processing utterance ID: an:8
+  Output: ~SIL EIGHT ~SIL
+Processing utterance ID: an:9
+  Output: ~SIL NINE ~SIL
+Processing utterance ID: an:o
+  Output: ~SIL OH ~SIL
+Processing utterance ID: an:z
+  Output: ~SIL ZERO ~SIL
+Processing utterance ID: pi:1
+  Output: ~SIL ONE ~SIL
+Processing utterance ID: pi:2
+  Output: ~SIL ZERO ~SIL
+Processing utterance ID: pi:3
+  Output: ~SIL THREE ~SIL
+Processing utterance ID: pi:4
+  Output: ~SIL OH ~SIL
+Processing utterance ID: pi:5
+  Output: ~SIL ONE ~SIL
+Processing utterance ID: pi:6
+  Output: ~SIL SIX ~SIL
+Processing utterance ID: pi:7
+  Output: ~SIL SEVEN ~SIL
+Processing utterance ID: pi:8
+  Output: ~SIL SIX ~SIL
+Processing utterance ID: pi:9
+  Output: ~SIL ONE ~SIL
+Processing utterance ID: pi:o
+  Output: ~SIL OH ~SIL
+Processing utterance ID: pi:z
+  Output: ~SIL ZERO ~SIL
+Processing utterance ID: rr:1
+  Output: ~SIL FOUR ~SIL
+Processing utterance ID: rr:2
+  Output: ~SIL SEVEN ~SIL
+Processing utterance ID: rr:3
+  Output: ~SIL THREE ~SIL
+Processing utterance ID: rr:4
+  Output: ~SIL FOUR ~SIL
+Processing utterance ID: rr:5
+  Output: ~SIL FIVE ~SIL
+Processing utterance ID: rr:6
+  Output: ~SIL SIX ~SIL
+Processing utterance ID: rr:7
+  Output: ~SIL SEVEN ~SIL
+Processing utterance ID: rr:8
+  Output: ~SIL THREE ~SIL
+Processing utterance ID: rr:9
+  Output: ~SIL NINE ~SIL
+Processing utterance ID: rr:o
+  Output: ~SIL OH ~SIL
+Processing utterance ID: rr:z
+  Output: ~SIL ZERO ~SIL
+Processing utterance ID: mh:1
+  Output: ~SIL ONE ~SIL
+Processing utterance ID: mh:2
+  Output: ~SIL ZERO ~SIL
+Processing utterance ID: mh:3
+  Output: ~SIL THREE ~SIL
+Processing utterance ID: mh:4
+  Output: ~SIL FOUR ~SIL
+Processing utterance ID: mh:5
+  Output: ~SIL ONE ~SIL
+Processing utterance ID: mh:6
+  Output: ~SIL SIX ~SIL
+Processing utterance ID: mh:7
+  Output: SEVEN ~SIL
+Processing utterance ID: mh:8
+  Output: ~SIL THREE ~SIL
+Processing utterance ID: mh:9
+  Output: ~SIL NINE ~SIL
+Processing utterance ID: mh:o
+  Output: ~SIL OH ~SIL
+Processing utterance ID: mh:z
+  Output: ~SIL ZERO ~SIL
+Processing utterance ID: st:1
+  Output: ~SIL ONE ~SIL
+Processing utterance ID: st:2
+  Output: ~SIL THREE ~SIL
+Processing utterance ID: st:3
+  Output: ~SIL THREE ~SIL
+Processing utterance ID: st:4
+  Output: ~SIL OH ~SIL
+Processing utterance ID: st:5
+  Output: ~SIL NINE ~SIL
+Processing utterance ID: st:6
+  Output: ~SIL SIX ~SIL
+Processing utterance ID: st:7
+  Output: ~SIL SEVEN
+Processing utterance ID: st:8
+  Output: ~SIL EIGHT ~SIL
+Processing utterance ID: st:9
+  Output: ~SIL NINE ~SIL
+Processing utterance ID: st:o
+  Output: ~SIL OH ~SIL
+Processing utterance ID: st:z
+  Output: ~SIL ZERO ~SIL
+Processing utterance ID: pm:1
+  Output: ~SIL ONE
+-11.348514 logprob/frame (9392 frames).
+Computing WER ...

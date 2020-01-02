@@ -1,0 +1,506 @@
+
+utt: (es:1)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: ONE 
+rec: ONE 
+
+utt: (es:2)
+WER: 100.00 % N: 1 C: 0 S: 1 D: 0 I: 0
+lab: TWO   
+rec: THREE 
+
+utt: (es:3)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: THREE 
+rec: THREE 
+
+utt: (es:4)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: FOUR 
+rec: FOUR 
+
+utt: (es:5)
+WER: 100.00 % N: 1 C: 0 S: 1 D: 0 I: 0
+lab: FIVE 
+rec: NINE 
+
+utt: (es:6)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: SIX 
+rec: SIX 
+
+utt: (es:7)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: SEVEN 
+rec: SEVEN 
+
+utt: (es:8)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: EIGHT 
+rec: EIGHT 
+
+utt: (es:9)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: NINE 
+rec: NINE 
+
+utt: (es:o)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: OH 
+rec: OH 
+
+utt: (es:z)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: ZERO 
+rec: ZERO 
+
+utt: (kc:1)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: ONE 
+rec: ONE 
+
+utt: (kc:2)
+WER: 100.00 % N: 1 C: 0 S: 1 D: 0 I: 0
+lab: TWO   
+rec: SEVEN 
+
+utt: (kc:3)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: THREE 
+rec: THREE 
+
+utt: (kc:4)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: FOUR 
+rec: FOUR 
+
+utt: (kc:5)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: FIVE 
+rec: FIVE 
+
+utt: (kc:6)
+WER: 100.00 % N: 1 C: 0 S: 1 D: 0 I: 0
+lab: SIX   
+rec: SEVEN 
+
+utt: (kc:7)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: SEVEN 
+rec: SEVEN 
+
+utt: (kc:8)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: EIGHT 
+rec: EIGHT 
+
+utt: (kc:9)
+WER: 100.00 % N: 1 C: 0 S: 1 D: 0 I: 0
+lab: NINE 
+rec: ONE  
+
+utt: (kc:o)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: OH 
+rec: OH 
+
+utt: (kc:z)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: ZERO 
+rec: ZERO 
+
+utt: (fl:1)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: ONE 
+rec: ONE 
+
+utt: (fl:2)
+WER: 100.00 % N: 1 C: 0 S: 1 D: 0 I: 0
+lab: TWO 
+rec: ONE 
+
+utt: (fl:3)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: THREE 
+rec: THREE 
+
+utt: (fl:4)
+WER: 100.00 % N: 1 C: 0 S: 1 D: 0 I: 0
+lab: FOUR 
+rec: ONE  
+
+utt: (fl:5)
+WER: 100.00 % N: 1 C: 0 S: 1 D: 0 I: 0
+lab: FIVE 
+rec: ONE  
+
+utt: (fl:6)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: SIX 
+rec: SIX 
+
+utt: (fl:7)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: SEVEN 
+rec: SEVEN 
+
+utt: (fl:8)
+WER: 100.00 % N: 1 C: 0 S: 1 D: 0 I: 0
+lab: EIGHT 
+rec: THREE 
+
+utt: (fl:9)
+WER: 100.00 % N: 1 C: 0 S: 1 D: 0 I: 0
+lab: NINE 
+rec: ONE  
+
+utt: (fl:o)
+WER: 100.00 % N: 1 C: 0 S: 1 D: 0 I: 0
+lab: OH  
+rec: ONE 
+
+utt: (fl:z)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: ZERO 
+rec: ZERO 
+
+utt: (aj:1)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: ONE 
+rec: ONE 
+
+utt: (aj:2)
+WER: 100.00 % N: 1 C: 0 S: 1 D: 0 I: 0
+lab: TWO  
+rec: ZERO 
+
+utt: (aj:3)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: THREE 
+rec: THREE 
+
+utt: (aj:4)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: FOUR 
+rec: FOUR 
+
+utt: (aj:5)
+WER: 100.00 % N: 1 C: 0 S: 1 D: 0 I: 0
+lab: FIVE 
+rec: OH   
+
+utt: (aj:6)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: SIX 
+rec: SIX 
+
+utt: (aj:7)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: SEVEN 
+rec: SEVEN 
+
+utt: (aj:8)
+WER: 100.00 % N: 1 C: 0 S: 1 D: 0 I: 0
+lab: EIGHT 
+rec: SIX   
+
+utt: (aj:9)
+WER: 100.00 % N: 1 C: 0 S: 1 D: 0 I: 0
+lab: NINE 
+rec: ONE  
+
+utt: (aj:o)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: OH 
+rec: OH 
+
+utt: (aj:z)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: ZERO 
+rec: ZERO 
+
+utt: (an:1)
+WER: 100.00 % N: 1 C: 0 S: 1 D: 0 I: 0
+lab: ONE  
+rec: NINE 
+
+utt: (an:2)
+WER: 100.00 % N: 1 C: 0 S: 1 D: 0 I: 0
+lab: TWO  
+rec: ZERO 
+
+utt: (an:3)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: THREE 
+rec: THREE 
+
+utt: (an:4)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: FOUR 
+rec: FOUR 
+
+utt: (an:5)
+WER: 100.00 % N: 1 C: 0 S: 1 D: 0 I: 0
+lab: FIVE 
+rec: ONE  
+
+utt: (an:6)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: SIX 
+rec: SIX 
+
+utt: (an:7)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: SEVEN 
+rec: SEVEN 
+
+utt: (an:8)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: EIGHT 
+rec: EIGHT 
+
+utt: (an:9)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: NINE 
+rec: NINE 
+
+utt: (an:o)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: OH 
+rec: OH 
+
+utt: (an:z)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: ZERO 
+rec: ZERO 
+
+utt: (pi:1)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: ONE 
+rec: ONE 
+
+utt: (pi:2)
+WER: 100.00 % N: 1 C: 0 S: 1 D: 0 I: 0
+lab: TWO  
+rec: ZERO 
+
+utt: (pi:3)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: THREE 
+rec: THREE 
+
+utt: (pi:4)
+WER: 100.00 % N: 1 C: 0 S: 1 D: 0 I: 0
+lab: FOUR 
+rec: OH   
+
+utt: (pi:5)
+WER: 100.00 % N: 1 C: 0 S: 1 D: 0 I: 0
+lab: FIVE 
+rec: ONE  
+
+utt: (pi:6)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: SIX 
+rec: SIX 
+
+utt: (pi:7)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: SEVEN 
+rec: SEVEN 
+
+utt: (pi:8)
+WER: 100.00 % N: 1 C: 0 S: 1 D: 0 I: 0
+lab: EIGHT 
+rec: SIX   
+
+utt: (pi:9)
+WER: 100.00 % N: 1 C: 0 S: 1 D: 0 I: 0
+lab: NINE 
+rec: ONE  
+
+utt: (pi:o)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: OH 
+rec: OH 
+
+utt: (pi:z)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: ZERO 
+rec: ZERO 
+
+utt: (rr:1)
+WER: 100.00 % N: 1 C: 0 S: 1 D: 0 I: 0
+lab: ONE  
+rec: FOUR 
+
+utt: (rr:2)
+WER: 100.00 % N: 1 C: 0 S: 1 D: 0 I: 0
+lab: TWO   
+rec: SEVEN 
+
+utt: (rr:3)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: THREE 
+rec: THREE 
+
+utt: (rr:4)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: FOUR 
+rec: FOUR 
+
+utt: (rr:5)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: FIVE 
+rec: FIVE 
+
+utt: (rr:6)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: SIX 
+rec: SIX 
+
+utt: (rr:7)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: SEVEN 
+rec: SEVEN 
+
+utt: (rr:8)
+WER: 100.00 % N: 1 C: 0 S: 1 D: 0 I: 0
+lab: EIGHT 
+rec: THREE 
+
+utt: (rr:9)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: NINE 
+rec: NINE 
+
+utt: (rr:o)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: OH 
+rec: OH 
+
+utt: (rr:z)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: ZERO 
+rec: ZERO 
+
+utt: (mh:1)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: ONE 
+rec: ONE 
+
+utt: (mh:2)
+WER: 100.00 % N: 1 C: 0 S: 1 D: 0 I: 0
+lab: TWO  
+rec: ZERO 
+
+utt: (mh:3)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: THREE 
+rec: THREE 
+
+utt: (mh:4)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: FOUR 
+rec: FOUR 
+
+utt: (mh:5)
+WER: 100.00 % N: 1 C: 0 S: 1 D: 0 I: 0
+lab: FIVE 
+rec: ONE  
+
+utt: (mh:6)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: SIX 
+rec: SIX 
+
+utt: (mh:7)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: SEVEN 
+rec: SEVEN 
+
+utt: (mh:8)
+WER: 100.00 % N: 1 C: 0 S: 1 D: 0 I: 0
+lab: EIGHT 
+rec: THREE 
+
+utt: (mh:9)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: NINE 
+rec: NINE 
+
+utt: (mh:o)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: OH 
+rec: OH 
+
+utt: (mh:z)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: ZERO 
+rec: ZERO 
+
+utt: (st:1)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: ONE 
+rec: ONE 
+
+utt: (st:2)
+WER: 100.00 % N: 1 C: 0 S: 1 D: 0 I: 0
+lab: TWO   
+rec: THREE 
+
+utt: (st:3)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: THREE 
+rec: THREE 
+
+utt: (st:4)
+WER: 100.00 % N: 1 C: 0 S: 1 D: 0 I: 0
+lab: FOUR 
+rec: OH   
+
+utt: (st:5)
+WER: 100.00 % N: 1 C: 0 S: 1 D: 0 I: 0
+lab: FIVE 
+rec: NINE 
+
+utt: (st:6)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: SIX 
+rec: SIX 
+
+utt: (st:7)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: SEVEN 
+rec: SEVEN 
+
+utt: (st:8)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: EIGHT 
+rec: EIGHT 
+
+utt: (st:9)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: NINE 
+rec: NINE 
+
+utt: (st:o)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: OH 
+rec: OH 
+
+utt: (st:z)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: ZERO 
+rec: ZERO 
+
+utt: (pm:1)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: ONE 
+rec: ONE 
+===========================================================================
+
+Overall -> 32.00 % N: 100 C: 68 S: 32 D: 0 I: 0
+English -> 32.00 % N: 100 C: 68 S: 32 D: 0 I: 0
+
+===========================================================================

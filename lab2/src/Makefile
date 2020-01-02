@@ -4,7 +4,8 @@
 ########################################################################
 
 ifeq ($(OPTFLAGS),)
-	OPTFLAGS = -g
+	#OPTFLAGS = -g
+	OPTFLAGS = -O2
 endif
 
 CXX = g++
