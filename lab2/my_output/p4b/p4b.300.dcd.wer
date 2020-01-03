@@ -1,0 +1,506 @@
+
+utt: (rp:8b)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: EIGHT 
+rec: EIGHT 
+
+utt: (al:8a)
+WER: 100.00 % N: 1 C: 1 S: 0 D: 0 I: 1
+lab: EIGHT     
+rec: EIGHT TWO 
+
+utt: (kd:o327645a)
+WER: 0.00 % N: 7 C: 7 S: 0 D: 0 I: 0
+lab: OH THREE TWO SEVEN SIX FOUR FIVE 
+rec: OH THREE TWO SEVEN SIX FOUR FIVE 
+
+utt: (an:ob)
+WER: 100.00 % N: 1 C: 1 S: 0 D: 0 I: 1
+lab: OH     
+rec: OH ONE 
+
+utt: (ra:72oa)
+WER: 33.33 % N: 3 C: 2 S: 1 D: 0 I: 0
+lab: SEVEN TWO OH   
+rec: SEVEN TWO ZERO 
+
+utt: (jc:72z16a)
+WER: 0.00 % N: 5 C: 5 S: 0 D: 0 I: 0
+lab: SEVEN TWO ZERO ONE SIX 
+rec: SEVEN TWO ZERO ONE SIX 
+
+utt: (kh:7a)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: SEVEN 
+rec: SEVEN 
+
+utt: (hs:7o78a)
+WER: 50.00 % N: 4 C: 2 S: 1 D: 1 I: 0
+lab: SEVEN OH SEVEN EIGHT 
+rec: SEVEN    SEVEN FIVE  
+
+utt: (pi:29z83a)
+WER: 0.00 % N: 5 C: 5 S: 0 D: 0 I: 0
+lab: TWO NINE ZERO EIGHT THREE 
+rec: TWO NINE ZERO EIGHT THREE 
+
+utt: (kf:53a)
+WER: 0.00 % N: 2 C: 2 S: 0 D: 0 I: 0
+lab: FIVE THREE 
+rec: FIVE THREE 
+
+utt: (kn:975a)
+WER: 0.00 % N: 3 C: 3 S: 0 D: 0 I: 0
+lab: NINE SEVEN FIVE 
+rec: NINE SEVEN FIVE 
+
+utt: (kc:z6z1a)
+WER: 25.00 % N: 4 C: 4 S: 0 D: 0 I: 1
+lab:       ZERO SIX ZERO ONE 
+rec: EIGHT ZERO SIX ZERO ONE 
+
+utt: (pp:382989oa)
+WER: 28.57 % N: 7 C: 7 S: 0 D: 0 I: 2
+lab: THREE EIGHT TWO NINE      EIGHT NINE OH    
+rec: THREE EIGHT TWO NINE NINE EIGHT NINE OH OH 
+
+utt: (dc:zb)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: ZERO 
+rec: ZERO 
+
+utt: (ih:2452a)
+WER: 0.00 % N: 4 C: 4 S: 0 D: 0 I: 0
+lab: TWO FOUR FIVE TWO 
+rec: TWO FOUR FIVE TWO 
+
+utt: (il:9a)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: NINE 
+rec: NINE 
+
+utt: (il:46o2a)
+WER: 25.00 % N: 4 C: 4 S: 0 D: 0 I: 1
+lab: FOUR       SIX OH TWO 
+rec: FOUR EIGHT SIX OH TWO 
+
+utt: (ie:876o186a)
+WER: 14.29 % N: 7 C: 7 S: 0 D: 0 I: 1
+lab: EIGHT       SEVEN SIX OH ONE EIGHT SIX 
+rec: EIGHT EIGHT SEVEN SIX OH ONE EIGHT SIX 
+
+utt: (rf:417a)
+WER: 0.00 % N: 3 C: 3 S: 0 D: 0 I: 0
+lab: FOUR ONE SEVEN 
+rec: FOUR ONE SEVEN 
+
+utt: (la:13o4o63a)
+WER: 28.57 % N: 7 C: 6 S: 1 D: 0 I: 1
+lab: ONE THREE OH FOUR OH    SIX THREE 
+rec: ONE THREE OH FOUR OH OH SIX NINE  
+
+utt: (jn:o282a)
+WER: 50.00 % N: 4 C: 2 S: 1 D: 1 I: 0
+lab: OH TWO EIGHT TWO 
+rec: OH SIX       TWO 
+
+utt: (kr:oo438a)
+WER: 60.00 % N: 5 C: 4 S: 1 D: 0 I: 2
+lab: OH OH FOUR     THREE EIGHT     
+rec: OH OH OH   ONE THREE EIGHT TWO 
+
+utt: (ih:352z8a)
+WER: 40.00 % N: 5 C: 5 S: 0 D: 0 I: 2
+lab: THREE FIVE TWO ZERO    EIGHT      
+rec: THREE FIVE TWO ZERO OH EIGHT FIVE 
+
+utt: (pb:24oa)
+WER: 33.33 % N: 3 C: 3 S: 0 D: 0 I: 1
+lab: TWO FOUR OH     
+rec: TWO FOUR OH ONE 
+
+utt: (kf:8z39za)
+WER: 0.00 % N: 5 C: 5 S: 0 D: 0 I: 0
+lab: EIGHT ZERO THREE NINE ZERO 
+rec: EIGHT ZERO THREE NINE ZERO 
+
+utt: (kh:zb)
+WER: 100.00 % N: 1 C: 1 S: 0 D: 0 I: 1
+lab:    ZERO 
+rec: OH ZERO 
+
+utt: (fj:4o3a)
+WER: 33.33 % N: 3 C: 3 S: 0 D: 0 I: 1
+lab: FOUR OH    THREE 
+rec: FOUR OH OH THREE 
+
+utt: (in:6za)
+WER: 50.00 % N: 2 C: 2 S: 0 D: 0 I: 1
+lab: SIX ZERO    
+rec: SIX ZERO OH 
+
+utt: (kd:94zza)
+WER: 0.00 % N: 4 C: 4 S: 0 D: 0 I: 0
+lab: NINE FOUR ZERO ZERO 
+rec: NINE FOUR ZERO ZERO 
+
+utt: (ac:o22o6ooa)
+WER: 14.29 % N: 7 C: 7 S: 0 D: 0 I: 1
+lab: OH TWO TWO OH SIX OH OH    
+rec: OH TWO TWO OH SIX OH OH OH 
+
+utt: (an:z125a)
+WER: 0.00 % N: 4 C: 4 S: 0 D: 0 I: 0
+lab: ZERO ONE TWO FIVE 
+rec: ZERO ONE TWO FIVE 
+
+utt: (fj:2b)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: TWO 
+rec: TWO 
+
+utt: (hs:3a)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: THREE 
+rec: THREE 
+
+utt: (pe:233a)
+WER: 0.00 % N: 3 C: 3 S: 0 D: 0 I: 0
+lab: TWO THREE THREE 
+rec: TWO THREE THREE 
+
+utt: (ih:2oa)
+WER: 50.00 % N: 2 C: 2 S: 0 D: 0 I: 1
+lab: TWO OH    
+rec: TWO OH OH 
+
+utt: (ek:798z913a)
+WER: 14.29 % N: 7 C: 7 S: 0 D: 0 I: 1
+lab: SEVEN NINE EIGHT ZERO    NINE ONE THREE 
+rec: SEVEN NINE EIGHT ZERO OH NINE ONE THREE 
+
+utt: (ha:9b)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: NINE 
+rec: NINE 
+
+utt: (es:8692oa)
+WER: 20.00 % N: 5 C: 4 S: 1 D: 0 I: 0
+lab: EIGHT SIX NINE TWO OH   
+rec: EIGHT SIX NINE TWO NINE 
+
+utt: (ie:817a)
+WER: 0.00 % N: 3 C: 3 S: 0 D: 0 I: 0
+lab: EIGHT ONE SEVEN 
+rec: EIGHT ONE SEVEN 
+
+utt: (jn:54a)
+WER: 0.00 % N: 2 C: 2 S: 0 D: 0 I: 0
+lab: FIVE FOUR 
+rec: FIVE FOUR 
+
+utt: (ha:o61oa)
+WER: 25.00 % N: 4 C: 3 S: 0 D: 1 I: 0
+lab: OH SIX ONE OH 
+rec: OH SIX ONE    
+
+utt: (mh:5241577a)
+WER: 0.00 % N: 7 C: 7 S: 0 D: 0 I: 0
+lab: FIVE TWO FOUR ONE FIVE SEVEN SEVEN 
+rec: FIVE TWO FOUR ONE FIVE SEVEN SEVEN 
+
+utt: (la:47oa)
+WER: 0.00 % N: 3 C: 3 S: 0 D: 0 I: 0
+lab: FOUR SEVEN OH 
+rec: FOUR SEVEN OH 
+
+utt: (pe:31z8178a)
+WER: 28.57 % N: 7 C: 6 S: 1 D: 0 I: 1
+lab: THREE ONE ZERO EIGHT ONE SEVEN    EIGHT 
+rec: TWO   ONE ZERO EIGHT ONE SEVEN OH EIGHT 
+
+utt: (jc:99oo1a)
+WER: 0.00 % N: 5 C: 5 S: 0 D: 0 I: 0
+lab: NINE NINE OH OH ONE 
+rec: NINE NINE OH OH ONE 
+
+utt: (fj:51a)
+WER: 50.00 % N: 2 C: 1 S: 1 D: 0 I: 0
+lab: FIVE ONE  
+rec: FIVE FOUR 
+
+utt: (ec:113oa)
+WER: 50.00 % N: 4 C: 2 S: 1 D: 1 I: 0
+lab: ONE ONE THREE OH  
+rec: ONE     THREE ONE 
+
+utt: (fk:7945a)
+WER: 0.00 % N: 4 C: 4 S: 0 D: 0 I: 0
+lab: SEVEN NINE FOUR FIVE 
+rec: SEVEN NINE FOUR FIVE 
+
+utt: (gg:2o78a)
+WER: 25.00 % N: 4 C: 3 S: 0 D: 1 I: 0
+lab: TWO OH SEVEN EIGHT 
+rec: TWO    SEVEN EIGHT 
+
+utt: (pm:21oa)
+WER: 100.00 % N: 3 C: 2 S: 0 D: 1 I: 2
+lab: TWO ONE OH          
+rec: TWO     OH ZERO TWO 
+
+utt: (hn:82o34a)
+WER: 20.00 % N: 5 C: 5 S: 0 D: 0 I: 1
+lab: EIGHT TWO OH    THREE FOUR 
+rec: EIGHT TWO OH OH THREE FOUR 
+
+utt: (cl:8b)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: EIGHT 
+rec: EIGHT 
+
+utt: (kc:32641a)
+WER: 40.00 % N: 5 C: 5 S: 0 D: 0 I: 2
+lab:     THREE TWO SIX FOUR    ONE 
+rec: SIX THREE TWO SIX FOUR OH ONE 
+
+utt: (fk:z91a)
+WER: 0.00 % N: 3 C: 3 S: 0 D: 0 I: 0
+lab: ZERO NINE ONE 
+rec: ZERO NINE ONE 
+
+utt: (kn:5195916a)
+WER: 28.57 % N: 7 C: 6 S: 1 D: 0 I: 1
+lab: FIVE ONE NINE FIVE NINE    ONE SIX 
+rec: FIVE OH  NINE FIVE NINE OH ONE SIX 
+
+utt: (el:z7788a)
+WER: 40.00 % N: 5 C: 3 S: 2 D: 0 I: 0
+lab: ZERO SEVEN SEVEN EIGHT EIGHT 
+rec: TWO  TWO   SEVEN EIGHT EIGHT 
+
+utt: (gt:z71a)
+WER: 0.00 % N: 3 C: 3 S: 0 D: 0 I: 0
+lab: ZERO SEVEN ONE 
+rec: ZERO SEVEN ONE 
+
+utt: (kp:51a)
+WER: 100.00 % N: 2 C: 2 S: 0 D: 0 I: 2
+lab:       FIVE ONE    
+rec: EIGHT FIVE ONE OH 
+
+utt: (jn:1b)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: ONE 
+rec: ONE 
+
+utt: (la:58a)
+WER: 0.00 % N: 2 C: 2 S: 0 D: 0 I: 0
+lab: FIVE EIGHT 
+rec: FIVE EIGHT 
+
+utt: (kn:1611712a)
+WER: 28.57 % N: 7 C: 7 S: 0 D: 0 I: 2
+lab:    ONE SIX ONE ONE SEVEN ONE    TWO 
+rec: OH ONE SIX ONE ONE SEVEN ONE OH TWO 
+
+utt: (rd:4oa)
+WER: 50.00 % N: 2 C: 2 S: 0 D: 0 I: 1
+lab: FOUR OH    
+rec: FOUR OH OH 
+
+utt: (ee:2a)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: TWO 
+rec: TWO 
+
+utt: (mh:1b)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: ONE 
+rec: ONE 
+
+utt: (jj:87a)
+WER: 0.00 % N: 2 C: 2 S: 0 D: 0 I: 0
+lab: EIGHT SEVEN 
+rec: EIGHT SEVEN 
+
+utt: (hn:5332a)
+WER: 0.00 % N: 4 C: 4 S: 0 D: 0 I: 0
+lab: FIVE THREE THREE TWO 
+rec: FIVE THREE THREE TWO 
+
+utt: (kd:7a)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: SEVEN 
+rec: SEVEN 
+
+utt: (hn:38342ooa)
+WER: 28.57 % N: 7 C: 6 S: 0 D: 1 I: 1
+lab: THREE EIGHT THREE    FOUR TWO OH OH 
+rec: THREE       THREE OH FOUR TWO OH OH 
+
+utt: (ff:o14oa)
+WER: 25.00 % N: 4 C: 4 S: 0 D: 0 I: 1
+lab: OH ONE FOUR OH    
+rec: OH ONE FOUR OH OH 
+
+utt: (rp:65z99a)
+WER: 20.00 % N: 5 C: 4 S: 1 D: 0 I: 0
+lab: SIX FIVE ZERO NINE NINE 
+rec: SIX FIVE ZERO NINE ONE  
+
+utt: (el:6428a)
+WER: 25.00 % N: 4 C: 4 S: 0 D: 0 I: 1
+lab: SIX FOUR TWO    EIGHT 
+rec: SIX FOUR TWO OH EIGHT 
+
+utt: (mh:2212775a)
+WER: 28.57 % N: 7 C: 6 S: 1 D: 0 I: 1
+lab: TWO TWO ONE TWO SEVEN     SEVEN FIVE 
+rec: TWO TWO ONE TWO TWO   ONE SEVEN FIVE 
+
+utt: (mm:9b)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: NINE 
+rec: NINE 
+
+utt: (rp:5596a)
+WER: 0.00 % N: 4 C: 4 S: 0 D: 0 I: 0
+lab: FIVE FIVE NINE SIX 
+rec: FIVE FIVE NINE SIX 
+
+utt: (rr:o562o63a)
+WER: 28.57 % N: 7 C: 5 S: 1 D: 1 I: 0
+lab: OH FIVE SIX TWO  OH SIX THREE 
+rec: OH FIVE SIX ZERO    SIX THREE 
+
+utt: (dc:9o14a)
+WER: 25.00 % N: 4 C: 4 S: 0 D: 0 I: 1
+lab: NINE OH    ONE FOUR 
+rec: NINE OH OH ONE FOUR 
+
+utt: (ih:17441zza)
+WER: 28.57 % N: 7 C: 6 S: 1 D: 0 I: 1
+lab:    ONE SEVEN FOUR FOUR ONE ZERO ZERO 
+rec: OH ONE SIX   FOUR FOUR ONE ZERO ZERO 
+
+utt: (ee:14a)
+WER: 0.00 % N: 2 C: 2 S: 0 D: 0 I: 0
+lab: ONE FOUR 
+rec: ONE FOUR 
+
+utt: (al:38a)
+WER: 0.00 % N: 2 C: 2 S: 0 D: 0 I: 0
+lab: THREE EIGHT 
+rec: THREE EIGHT 
+
+utt: (in:4464229a)
+WER: 0.00 % N: 7 C: 7 S: 0 D: 0 I: 0
+lab: FOUR FOUR SIX FOUR TWO TWO NINE 
+rec: FOUR FOUR SIX FOUR TWO TWO NINE 
+
+utt: (ff:973a)
+WER: 0.00 % N: 3 C: 3 S: 0 D: 0 I: 0
+lab: NINE SEVEN THREE 
+rec: NINE SEVEN THREE 
+
+utt: (pm:5281a)
+WER: 25.00 % N: 4 C: 3 S: 0 D: 1 I: 0
+lab: FIVE TWO EIGHT ONE 
+rec: FIVE TWO       ONE 
+
+utt: (cg:1o7oo14a)
+WER: 28.57 % N: 7 C: 6 S: 1 D: 0 I: 1
+lab: ONE OH    SEVEN OH OH ONE    FOUR 
+rec: ONE SEVEN SEVEN OH OH ONE OH FOUR 
+
+utt: (mm:o55o5a)
+WER: 40.00 % N: 5 C: 5 S: 0 D: 0 I: 2
+lab:     OH FIVE FIVE OH    FIVE 
+rec: SIX OH FIVE FIVE OH OH FIVE 
+
+utt: (mw:99136o4a)
+WER: 14.29 % N: 7 C: 7 S: 0 D: 0 I: 1
+lab:       NINE NINE ONE THREE SIX OH FOUR 
+rec: EIGHT NINE NINE ONE THREE SIX OH FOUR 
+
+utt: (ha:298a)
+WER: 33.33 % N: 3 C: 2 S: 0 D: 1 I: 0
+lab: TWO NINE EIGHT 
+rec: TWO NINE       
+
+utt: (es:15a)
+WER: 50.00 % N: 2 C: 2 S: 0 D: 0 I: 1
+lab: ONE FIVE    
+rec: ONE FIVE OH 
+
+utt: (rd:9b)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: NINE 
+rec: NINE 
+
+utt: (rp:z464za)
+WER: 0.00 % N: 5 C: 5 S: 0 D: 0 I: 0
+lab: ZERO FOUR SIX FOUR ZERO 
+rec: ZERO FOUR SIX FOUR ZERO 
+
+utt: (fl:82579a)
+WER: 40.00 % N: 5 C: 3 S: 2 D: 0 I: 0
+lab: EIGHT TWO FIVE SEVEN NINE 
+rec: EIGHT TWO ONE  SEVEN ONE  
+
+utt: (kf:695a)
+WER: 0.00 % N: 3 C: 3 S: 0 D: 0 I: 0
+lab: SIX NINE FIVE 
+rec: SIX NINE FIVE 
+
+utt: (la:8a)
+WER: 100.00 % N: 1 C: 1 S: 0 D: 0 I: 1
+lab: EIGHT       
+rec: EIGHT EIGHT 
+
+utt: (fl:z5a)
+WER: 0.00 % N: 2 C: 2 S: 0 D: 0 I: 0
+lab: ZERO FIVE 
+rec: ZERO FIVE 
+
+utt: (ek:8b)
+WER: 100.00 % N: 1 C: 1 S: 0 D: 0 I: 1
+lab: EIGHT     
+rec: EIGHT TWO 
+
+utt: (jc:2b)
+WER: 100.00 % N: 1 C: 1 S: 0 D: 0 I: 1
+lab:    TWO 
+rec: OH TWO 
+
+utt: (hn:3b)
+WER: 0.00 % N: 1 C: 1 S: 0 D: 0 I: 0
+lab: THREE 
+rec: THREE 
+
+utt: (ek:8221324a)
+WER: 14.29 % N: 7 C: 6 S: 1 D: 0 I: 0
+lab: EIGHT TWO   TWO ONE THREE TWO FOUR 
+rec: EIGHT EIGHT TWO ONE THREE TWO FOUR 
+
+utt: (ff:83628a)
+WER: 0.00 % N: 5 C: 5 S: 0 D: 0 I: 0
+lab: EIGHT THREE SIX TWO EIGHT 
+rec: EIGHT THREE SIX TWO EIGHT 
+
+utt: (gg:381oa)
+WER: 25.00 % N: 4 C: 4 S: 0 D: 0 I: 1
+lab: THREE EIGHT ONE OH     
+rec: THREE EIGHT ONE OH TWO 
+
+utt: (ek:311a)
+WER: 0.00 % N: 3 C: 3 S: 0 D: 0 I: 0
+lab: THREE ONE ONE 
+rec: THREE ONE ONE 
+===========================================================================
+
+Overall -> 20.82 % N: 365 C: 335 S: 20 D: 10 I: 46
+English -> 20.82 % N: 365 C: 335 S: 20 D: 10 I: 46
+
+===========================================================================

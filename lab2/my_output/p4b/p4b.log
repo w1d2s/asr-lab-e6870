@@ -1,0 +1,221 @@
+======================================================================
+Existing model trained on 300 sentences, isolated digit strings.
+======================================================================
+Decoding ...
+Processing utterance ID: rp:8b
+  Output: ~SIL EIGHT ~SIL
+Processing utterance ID: al:8a
+  Output: ~SIL EIGHT ~SIL TWO ~SIL
+Processing utterance ID: kd:o327645a
+  Output: ~SIL OH ~SIL THREE ~SIL TWO ~SIL SEVEN SIX FOUR ~SIL FIVE ~SIL
+Processing utterance ID: an:ob
+  Output: ~SIL OH ONE
+Processing utterance ID: ra:72oa
+  Output: SEVEN TWO ZERO
+Processing utterance ID: jc:72z16a
+  Output: ~SIL SEVEN TWO ZERO ONE SIX ~SIL
+Processing utterance ID: kh:7a
+  Output: ~SIL SEVEN ~SIL
+Processing utterance ID: hs:7o78a
+  Output: ~SIL SEVEN SEVEN FIVE ~SIL
+Processing utterance ID: pi:29z83a
+  Output: ~SIL TWO NINE ZERO EIGHT THREE ~SIL
+Processing utterance ID: kf:53a
+  Output: ~SIL FIVE ~SIL THREE ~SIL
+Processing utterance ID: kn:975a
+  Output: ~SIL NINE SEVEN FIVE ~SIL
+Processing utterance ID: kc:z6z1a
+  Output: ~SIL EIGHT ~SIL ZERO SIX ZERO ONE
+Processing utterance ID: pp:382989oa
+  Output: THREE EIGHT ~SIL TWO NINE NINE EIGHT NINE OH OH ~SIL
+Processing utterance ID: dc:zb
+  Output: ~SIL ZERO ~SIL
+Processing utterance ID: ih:2452a
+  Output: ~SIL TWO FOUR FIVE ~SIL TWO ~SIL
+Processing utterance ID: il:9a
+  Output: ~SIL NINE ~SIL
+Processing utterance ID: il:46o2a
+  Output: ~SIL FOUR EIGHT SIX ~SIL OH ~SIL TWO ~SIL
+Processing utterance ID: ie:876o186a
+  Output: ~SIL EIGHT ~SIL EIGHT SEVEN SIX OH ONE EIGHT SIX ~SIL
+Processing utterance ID: rf:417a
+  Output: ~SIL FOUR ONE SEVEN
+Processing utterance ID: la:13o4o63a
+  Output: ~SIL ONE THREE OH ~SIL FOUR ~SIL OH OH SIX ~SIL NINE ~SIL
+Processing utterance ID: jn:o282a
+  Output: ~SIL OH SIX TWO ~SIL
+Processing utterance ID: kr:oo438a
+  Output: ~SIL OH OH OH ~SIL ONE THREE EIGHT ~SIL TWO ~SIL
+Processing utterance ID: ih:352z8a
+  Output: ~SIL THREE ~SIL FIVE ~SIL TWO ZERO OH EIGHT FIVE
+Processing utterance ID: pb:24oa
+  Output: ~SIL TWO ~SIL FOUR OH ONE ~SIL
+Processing utterance ID: kf:8z39za
+  Output: ~SIL EIGHT ZERO THREE NINE ZERO ~SIL
+Processing utterance ID: kh:zb
+  Output: ~SIL OH ~SIL ZERO ~SIL
+Processing utterance ID: fj:4o3a
+  Output: ~SIL FOUR OH OH ~SIL THREE ~SIL
+Processing utterance ID: in:6za
+  Output: ~SIL SIX ZERO OH ~SIL
+Processing utterance ID: kd:94zza
+  Output: ~SIL NINE ~SIL FOUR ZERO ZERO ~SIL
+Processing utterance ID: ac:o22o6ooa
+  Output: ~SIL OH ~SIL TWO ~SIL TWO ~SIL OH SIX OH ~SIL OH ~SIL OH ~SIL
+Processing utterance ID: an:z125a
+  Output: ~SIL ZERO ONE TWO ~SIL FIVE ~SIL
+Processing utterance ID: fj:2b
+  Output: ~SIL TWO ~SIL
+Processing utterance ID: hs:3a
+  Output: ~SIL THREE ~SIL
+Processing utterance ID: pe:233a
+  Output: ~SIL TWO THREE THREE ~SIL
+Processing utterance ID: ih:2oa
+  Output: ~SIL TWO OH OH ~SIL
+Processing utterance ID: ek:798z913a
+  Output: SEVEN NINE ~SIL EIGHT ~SIL ZERO OH NINE ONE THREE ~SIL
+Processing utterance ID: ha:9b
+  Output: ~SIL NINE ~SIL
+Processing utterance ID: es:8692oa
+  Output: ~SIL EIGHT ~SIL SIX NINE TWO NINE
+Processing utterance ID: ie:817a
+  Output: ~SIL EIGHT ONE SEVEN
+Processing utterance ID: jn:54a
+  Output: ~SIL FIVE ~SIL FOUR ~SIL
+Processing utterance ID: ha:o61oa
+  Output: ~SIL OH SIX ONE ~SIL
+Processing utterance ID: mh:5241577a
+  Output: ~SIL FIVE TWO FOUR ~SIL ONE ~SIL FIVE SEVEN SEVEN ~SIL
+Processing utterance ID: la:47oa
+  Output: ~SIL FOUR SEVEN OH ~SIL
+Processing utterance ID: pe:31z8178a
+  Output: ~SIL TWO ONE ZERO ~SIL EIGHT ONE SEVEN OH EIGHT ~SIL
+Processing utterance ID: jc:99oo1a
+  Output: ~SIL NINE NINE OH OH ONE ~SIL
+Processing utterance ID: fj:51a
+  Output: ~SIL FIVE FOUR
+Processing utterance ID: ec:113oa
+  Output: ~SIL ONE THREE ONE
+Processing utterance ID: fk:7945a
+  Output: ~SIL SEVEN NINE FOUR FIVE
+Processing utterance ID: gg:2o78a
+  Output: ~SIL TWO SEVEN EIGHT ~SIL
+Processing utterance ID: pm:21oa
+  Output: ~SIL TWO OH ZERO TWO
+Processing utterance ID: hn:82o34a
+  Output: ~SIL EIGHT ~SIL TWO OH OH ~SIL THREE ~SIL FOUR ~SIL
+Processing utterance ID: cl:8b
+  Output: ~SIL EIGHT ~SIL
+Processing utterance ID: kc:32641a
+  Output: ~SIL SIX ~SIL THREE ~SIL TWO SIX FOUR OH ONE
+Processing utterance ID: fk:z91a
+  Output: ~SIL ZERO NINE ONE ~SIL
+Processing utterance ID: kn:5195916a
+  Output: ~SIL FIVE OH NINE ~SIL FIVE NINE OH ONE SIX ~SIL
+Processing utterance ID: el:z7788a
+  Output: ~SIL TWO TWO SEVEN ~SIL EIGHT ~SIL EIGHT ~SIL
+Processing utterance ID: gt:z71a
+  Output: ~SIL ZERO SEVEN ONE ~SIL
+Processing utterance ID: kp:51a
+  Output: ~SIL EIGHT ~SIL FIVE ONE OH ~SIL
+Processing utterance ID: jn:1b
+  Output: ~SIL ONE ~SIL
+Processing utterance ID: la:58a
+  Output: ~SIL FIVE ~SIL EIGHT ~SIL
+Processing utterance ID: kn:1611712a
+  Output: ~SIL OH ~SIL ONE SIX ONE ~SIL ONE SEVEN ONE OH TWO
+Processing utterance ID: rd:4oa
+  Output: ~SIL FOUR OH OH ~SIL
+Processing utterance ID: ee:2a
+  Output: ~SIL TWO ~SIL
+Processing utterance ID: mh:1b
+  Output: ~SIL ONE ~SIL
+Processing utterance ID: jj:87a
+  Output: ~SIL EIGHT SEVEN
+Processing utterance ID: hn:5332a
+  Output: FIVE THREE ~SIL THREE ~SIL TWO ~SIL
+Processing utterance ID: kd:7a
+  Output: ~SIL SEVEN ~SIL
+Processing utterance ID: hn:38342ooa
+  Output: ~SIL THREE ~SIL THREE OH FOUR ~SIL TWO OH OH ~SIL
+Processing utterance ID: ff:o14oa
+  Output: ~SIL OH ONE FOUR OH OH ~SIL
+Processing utterance ID: rp:65z99a
+  Output: ~SIL SIX ~SIL FIVE ZERO NINE ONE
+Processing utterance ID: el:6428a
+  Output: ~SIL SIX FOUR TWO OH EIGHT ~SIL
+Processing utterance ID: mh:2212775a
+  Output: ~SIL TWO TWO ONE ~SIL TWO TWO ONE SEVEN FIVE ~SIL
+Processing utterance ID: mm:9b
+  Output: ~SIL NINE
+Processing utterance ID: rp:5596a
+  Output: ~SIL FIVE ~SIL FIVE NINE SIX ~SIL
+Processing utterance ID: rr:o562o63a
+  Output: ~SIL OH FIVE SIX ZERO SIX ~SIL THREE ~SIL
+Processing utterance ID: dc:9o14a
+  Output: ~SIL NINE OH OH ONE FOUR ~SIL
+Processing utterance ID: ih:17441zza
+  Output: ~SIL OH ~SIL ONE SIX FOUR FOUR ONE ZERO ZERO ~SIL
+Processing utterance ID: ee:14a
+  Output: ~SIL ONE ~SIL FOUR ~SIL
+Processing utterance ID: al:38a
+  Output: ~SIL THREE ~SIL EIGHT ~SIL
+Processing utterance ID: in:4464229a
+  Output: ~SIL FOUR ~SIL FOUR SIX FOUR ~SIL TWO TWO NINE ~SIL
+Processing utterance ID: ff:973a
+  Output: ~SIL NINE SEVEN THREE ~SIL
+Processing utterance ID: pm:5281a
+  Output: ~SIL FIVE TWO ONE
+Processing utterance ID: cg:1o7oo14a
+  Output: ~SIL ONE SEVEN SEVEN ~SIL OH ~SIL OH ~SIL ONE OH FOUR ~SIL
+Processing utterance ID: mm:o55o5a
+  Output: ~SIL SIX ~SIL OH ~SIL FIVE FIVE OH ~SIL OH ~SIL FIVE ~SIL
+Processing utterance ID: mw:99136o4a
+  Output: ~SIL EIGHT ~SIL NINE NINE ONE THREE SIX OH FOUR ~SIL
+Processing utterance ID: ha:298a
+  Output: ~SIL TWO NINE
+Processing utterance ID: es:15a
+  Output: ~SIL ONE FIVE OH ~SIL
+Processing utterance ID: rd:9b
+  Output: ~SIL NINE ~SIL
+Processing utterance ID: rp:z464za
+  Output: ~SIL ZERO FOUR SIX FOUR ZERO ~SIL
+Processing utterance ID: fl:82579a
+  Output: ~SIL EIGHT ~SIL TWO ~SIL ONE SEVEN ONE ~SIL
+Processing utterance ID: kf:695a
+  Output: ~SIL SIX NINE FIVE ~SIL
+Processing utterance ID: la:8a
+  Output: ~SIL EIGHT ~SIL EIGHT ~SIL
+Processing utterance ID: fl:z5a
+  Output: ~SIL ZERO ~SIL FIVE ~SIL
+Processing utterance ID: ek:8b
+  Output: ~SIL EIGHT ~SIL TWO
+Processing utterance ID: jc:2b
+  Output: ~SIL OH ~SIL TWO ~SIL
+Processing utterance ID: hn:3b
+  Output: ~SIL THREE ~SIL
+Processing utterance ID: ek:8221324a
+  Output: ~SIL EIGHT EIGHT TWO ONE THREE TWO FOUR ~SIL
+Processing utterance ID: ff:83628a
+  Output: ~SIL EIGHT THREE SIX TWO EIGHT ~SIL
+Processing utterance ID: gg:381oa
+  Output: ~SIL THREE EIGHT ONE OH TWO ~SIL
+Processing utterance ID: ek:311a
+  Output: ~SIL THREE ONE ONE
+-12.598315 logprob/frame (18500 frames).
+Computing WER ...
+======================================================================
+Training: 300 sentences, continuous digit strings.
+======================================================================
+Iteration 1: 0.000000 logprob/frame (0 frames)
+Iteration 2: 0.000000 logprob/frame (0 frames)
+Iteration 3: 0.000000 logprob/frame (0 frames)
+Iteration 4: 0.000000 logprob/frame (0 frames)
+Iteration 5: 0.000000 logprob/frame (0 frames)
+Decoding ...
+Error: Invalid value for matrix element.
+Computing WER ...
+Traceback (most recent call last):
+  File "convert_fmt.py", line 19, in <module>
+    for line in open(dcd_file, 'r') :
+IOError: [Errno 2] No such file or directory: 'p4b.300c.dcd'

@@ -2,7 +2,9 @@
 
 
 
-for d in 100 300 1000 ; do
+#for d in 100 300 1000 ; do
+#for d in 100; do
+for d in 300 1000; do
 
 echo "======================================================================"
 echo "Training: $d sentences."
