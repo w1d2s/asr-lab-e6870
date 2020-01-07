@@ -64,7 +64,34 @@ void LangModel::count_sentence_ngrams(const vector<int>& wordList) {
   //      the value of the incremented count.
   //
   //      Your code should work for any value of m_n (larger than zero).
+ 
+  vector<int> zeroGram{0};
+  for (int n = 1; n <= m_n; ++n) {
+    int i = (m_n - 1) - (n - 1);
+    for (; i <= wordCnt - n; ++i) {
+      vector<int> nGram;
+      for (int j = 0; j < n - 1; ++j) {
+        nGram.push_back(wordList[i + j]);
+      }
+      if (n - 1 == 0) {
+        m_histCounts.incr_count(zeroGram);
+      } else if (n - 1 > 0) {
+        m_histCounts.incr_count(nGram);
+      }
 
+      nGram.push_back(wordList[i + n - 1]);
+      m_predCounts.incr_count(nGram);
+
+      if (m_predCounts.get_count(nGram) == 1) {
+        nGram.pop_back();
+        if (n - 1 == 0) {
+          m_histOnePlusCounts.incr_count(zeroGram);
+        } else if (n - 1 > 0) {
+          m_histOnePlusCounts.incr_count(nGram);
+        }
+      }
+    }
+  }
 
   //  END_LAB
   //
