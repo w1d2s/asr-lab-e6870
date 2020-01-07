@@ -159,10 +159,23 @@ double LangModel::get_prob_plus_delta(const vector<int>& ngram) const {
   //      "retProb" should be set to the smoothed n-gram probability
   //          of the last word in the n-gram given the previous words.
   //
+   
+  vector<int> nGramHist;
+  if (ngram.size() == 1) {
+    nGramHist.push_back(0);
+  } else {
+    nGramHist = ngram;
+    nGramHist.pop_back();
+  }
+
+  int predCnt = m_predCounts.get_count(ngram);
+  int histCnt = m_histCounts.get_count(nGramHist);
+
+  retProb = (predCnt + m_delta) / (histCnt + m_delta * vocSize);
 
   //  END_LAB
   //
-
+  
   return retProb;
 }
 
