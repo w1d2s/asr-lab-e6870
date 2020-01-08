@@ -1,5 +1,14 @@
 import sys
-from itertools import accumulate
+#from itertools import accumulate
+
+def accumulate(arr):
+    out = []
+    for i in range(len(arr)):
+        if i == 0:
+            out.append(arr[i])
+        else:
+            out.append(out[i - 1] + arr[i])
+    return out 
 
 def resocring_one_utt(candidates, lm_weight):
     best_score = -1000000

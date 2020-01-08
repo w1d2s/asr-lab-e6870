@@ -65,7 +65,6 @@ void LangModel::count_sentence_ngrams(const vector<int>& wordList) {
   //
   //      Your code should work for any value of m_n (larger than zero).
  
-  vector<int> zeroGram{0};
   for (int n = 1; n <= m_n; ++n) {
     int i = (m_n - 1) - (n - 1);
     for (; i <= wordCnt - n; ++i) {
@@ -73,22 +72,14 @@ void LangModel::count_sentence_ngrams(const vector<int>& wordList) {
       for (int j = 0; j < n - 1; ++j) {
         nGram.push_back(wordList[i + j]);
       }
-      if (n - 1 == 0) {
-        m_histCounts.incr_count(zeroGram);
-      } else if (n - 1 > 0) {
-        m_histCounts.incr_count(nGram);
-      }
+      m_histCounts.incr_count(nGram);
 
       nGram.push_back(wordList[i + n - 1]);
       m_predCounts.incr_count(nGram);
 
       if (m_predCounts.get_count(nGram) == 1) {
         nGram.pop_back();
-        if (n - 1 == 0) {
-          m_histOnePlusCounts.incr_count(zeroGram);
-        } else if (n - 1 > 0) {
-          m_histOnePlusCounts.incr_count(nGram);
-        }
+        m_histOnePlusCounts.incr_count(nGram);
       }
     }
   }
@@ -160,13 +151,7 @@ double LangModel::get_prob_plus_delta(const vector<int>& ngram) const {
   //          of the last word in the n-gram given the previous words.
   //
    
-  vector<int> nGramHist;
-  if (ngram.size() == 1) {
-    nGramHist.push_back(0);
-  } else {
-    nGramHist = ngram;
-    nGramHist.pop_back();
-  }
+  vector<int> nGramHist(ngram.begin(), ngram.end() - 1);
 
   int predCnt = m_predCounts.get_count(ngram);
   int histCnt = m_histCounts.get_count(nGramHist);
@@ -210,6 +195,24 @@ double LangModel::get_prob_witten_bell(const vector<int>& ngram) const {
   //      "retProb" should be set to the smoothed n-gram probability
   //          of the last word in the n-gram given the previous words.
   //
+
+  double backoffProb = 1.0f / vocSize;
+  int n = ngram.size();
+  
+  for (int m = 1; m <= n; ++m) {
+    vector<int> nGramHist(ngram.begin() + n - m, ngram.end() - 1);
+    unsigned histCnt = 0;
+    unsigned histOnePlusCnt = 0;
+    histCnt = m_histCounts.get_count(nGramHist);
+    histOnePlusCnt = m_histOnePlusCounts.get_count(nGramHist);
+    nGramHist.push_back(ngram[n - 1]);
+    unsigned predCnt = m_predCounts.get_count(nGramHist);
+    double lambda = (histCnt == 0) ? 0 : histCnt / double(histCnt + histOnePlusCnt);
+    double mleProb = (predCnt == 0) ? 0 : predCnt / double(histCnt);
+    backoffProb = lambda * mleProb + (1.0f - lambda) * backoffProb;
+  }
+  
+  retProb = backoffProb;
 
   //  END_LAB
   //

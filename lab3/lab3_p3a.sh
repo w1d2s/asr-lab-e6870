@@ -14,10 +14,3 @@ $binStr --vocab lab3.syms --train minitrain.txt --test test1.txt \
     --n $n --word_probs p3a.$n.probs
 done
 
-
-for n in 1 2 3 ; do
-$binStr --vocab lab3.syms --train minitrain.txt --test test1.txt \
-    --n $n --word_probs p3a.$n.probs
-done
-
-
