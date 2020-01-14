@@ -34,7 +34,7 @@
   when counted as a regular unigram (i.e., exactly in a position that we
   wish to predict the probability of)?
 
-->
+-> The end-of-sequence token, i.e., the </s>.
 
 
  *Sometimes in practice, the same token is used as both a
@@ -54,7 +54,11 @@
   method, we can update counts for n-grams that span different sentences.
   Is this a reasonable thing to do?  Why or why not?
 
-->
+-> It's not reasonable. In reality, the end-of-sentence token can only be
+   the word that we wish to predict the probability of, instead of being 
+   history of other words. If all the training sentences are concatenated,
+   the end-of-sentence token can become history of other words, which is 
+   meaningless.
 
 
 ########################################################################
@@ -76,13 +80,22 @@
   many different words follow the given history, and how many
   times each word follows the history):
 
-->
+-> If the word to predict is w[i], the history is w[i-1: i-n+1],
+   the coefficient of P_MLE() in Witten-Bell smoothing is lambda, we have
+   lambda = Count_hist(w[i-1: i-n+1]) / (Count_hist(w[i-1: i-n+1]), N_1plus(w[i-1: i-n+1])).
+   Count_hist is how many times history w[i-1: i-n+1] appears, 
+   N_1plus is the number of unique words that follow the history w[i-1: i-n+1].
+   When Count_hist >> N_1plus, the P_MLE() will be the dominant term,
+   intuitively, that means history w[i-1: i-n+1] appears a lot, but there are only few
+   unique words follow the history.
 
 
 * Describe a situation where P_backoff() will be the dominant term
   in the Witten-Bell smoothing equation:
 
-->
+-> When N_1plus ~= Count_hist, the P_backoff() will be the dominant term, that is,
+   in average, for each unique word w[i] that follows history w[i-1: i-n+1], the Count_hist 
+   assigned to w[i], i.e. Count(w[i], w[i-1: i-n+1]) is small.
 
 
 * Create the file "p3b.probs" by running "lab3_p3b.sh".
@@ -107,9 +120,9 @@ MLE (3-gram; full training set):
 plus-delta (3-gram; full training set): 
 Witten-Bell (3-gram; full training set): 
 
-2000 sentences training (3-gram; WB): 
-20000 sentences training (3-gram; WB): 
-200000 sentences training (3-gram; WB): 
+2000 sentences training (3-gram; WB): 35.24%
+20000 sentences training (3-gram; WB): 34.71%
+200000 sentences training (3-gram; WB): 33.94%
 
 
 * What did you learn in this part?
@@ -125,7 +138,10 @@ Witten-Bell (3-gram; full training set):
   as five words rather than four.  Why might this be a good
   idea?
 
-->
+-> When calculating perplexity, the last term included must be P(</s>| some history),
+   if we do not include </s> in this count, the short sentences will be greatly 
+   affected by the normalization, but the long sentences suffer less. When including
+   </s> in normalization, the bias of normalization is independent of length. 
 
 
 * If the sentence "OH I CAN IMAGINE" has the following trigram probabilities:
@@ -141,7 +157,7 @@ Witten-Bell (3-gram; full training set):
   what is the perplexity of this sentence (using the convention mentioned
   in the last question)?
 
-->
+-> perplexity = 144.9847095241435
 
 
 * For a given task, we can vary the vocabulary size; with smaller
