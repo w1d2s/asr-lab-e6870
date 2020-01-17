@@ -18,7 +18,13 @@
   they express the same set of models?  Can you think of any
   advantage one representation might have over the other?
 
-->
+-> These two representations are equivalent.
+   // TODO : how to transform between two representations?
+
+   If the output distributions are put on arcs, the null arcs can be separated
+   by themself. If the output distributions are put on states, then the null arcs
+   are absorbed into normal arcs, and we need one more output <epsilon> stands for
+   empty output on each state's output distribution.
 
 
 * When doing isolated word recognition, one method is to compute the
@@ -53,8 +59,16 @@
   If there are skip arcs, under what conditions is the good ordering
   still valid?
 
-->
+-> Method (1) can garanteen the correct result regardless of HMM topology,
+   for all cells at frame t must be dependent on cells at frame (t-1), but
+   cells at state s are not necessarily dependent on cells at state (s-1).
+   
+   Under the following situation method (2) can give the wrong answer:
+   There only exist arcs that go out from states with larger ids, and go
+   into states with smaller ids, say, each arcs (startStateIdx, endStateIdx)
+   in HMM must satisfy : startStateIdx >= endStateIdx.
 
+   If there are skip arcs : TODO
 
 * Create the file "p1b.out" by running:
 
@@ -117,22 +131,25 @@
 
 * What word-error rates did you find by running "lab2_p4a.sh"?
 
-->
+-> 100 training samples WER : 32.00 %
+   300 training samples WER : 5.00 %
+   1000 training samples WER : 4.00 % 
 
 
 * What word-error rates did you find by running "lab2_p4b.sh"?
 
-->
+-> 300 isolate training samples WER : 20.82 %
+   300 continous training samples WER : lack of training data. 
 
 
 * What word-error rates did you find by running "lab2_p4c.sh"?
 
-->
+-> Lack of training data.
 
 
 * What did you learn in this part?
 
-->
+-> The system performance became better with more training data used.
 
 
 * If an HMM were a fruit, what type of fruit would it be?
