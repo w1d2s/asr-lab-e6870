@@ -105,13 +105,30 @@
   Explain how to compute the posterior count of each component Gaussian
   given the posterior count of the entire GMM.
 
-->
+-> The posterior count of the i-th component in a GMM should be the 
+   posterior count of the entire GMM multiplies the i-th mixture weight.
 
 
 * Given the total posterior counts of each Gaussian in a GMM, explain
   how to reestimate the mixture weights of each Gaussian in that GMM.
 
-->
+-> Reference : cs229-notes7b, notes on EM algorithm.
+   If C_j(m | t) is the posterior count of m-th Gaussian in j-th GMM at
+   frame t, then the mixture weights 
+   p_j(m) = SUM(C_j(m | t), t from 1 to T) / T.
+
+   Notes : C_j(m | t) is a 'soft' count that means how much the frame t 
+   is assigned to m-th Gaussian in j-th GMM, therefore, in all T frames,
+   we can regard SUM(C_j(m | t), t from 1 to T) as a 'soft' total count
+   that how many frames are assigned to m-th Gaussian in j-th GMM, so we
+   can use the fraction
+
+      total 'soft' count of frames assigned to m-th Gaussian 
+    ----------------------------------------------------------
+                    total frame count, i.e. T
+
+   as a guess value of mixture weight of m-th Gaussian of j-th GMM.
+
 
 
 ########################################################################
