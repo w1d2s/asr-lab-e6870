@@ -25,6 +25,14 @@ http://www.openfst.org/twiki/bin/view/FST/FstDownload
   List "p1a.fsm" below.
 
 ->(Answer)
+    0	1	I	I
+    0	4	BEARS	BEARS
+    1	2	LIKE	LIKE
+    2	3	BEARS	BEARS
+    3
+    4	5	I	I
+    5	6	LIKE	LIKE
+    6
 
 
 
@@ -35,6 +43,10 @@ http://www.openfst.org/twiki/bin/view/FST/FstDownload
     fstcompile --isymbols=wd.isyms --osymbols=wd.isyms --keep_isymbols --keep_osymbols p1b.fsm p1b.fst
 
 ->(Answer)
+    0	0	I	I
+    0	0	LIKE	LOVE
+    0	0	BEARS	BEARS
+    0
 
 
 
@@ -66,6 +78,16 @@ http://www.openfst.org/twiki/bin/view/FST/FstDownload
   not submit any files for Part 1):
 
 ->(Answer)
+  # 1) Create p1d.fst: 
+    fstcompile --isymbols=p1a.isyms --osymbols=p1a.isyms --keep_isymbols --keep_osymbols  --acceptor p1d.fsm p1d.fst
+  # 2) Create fst that represents all three-word strings containing only words I, LIKE and BEARS.
+    fstconcat p1d.fst p1d.fst | fstconcat - p1d.fst p1d_3word.fst
+  # 3) remove epsilons and determinize p1d_3word.fst
+    fstrmepsilon p1d_3word.fst | fstdeterminize | p1d_3word_no_epsilon_determinized.fst
+  # 4) determinize p1a.fst
+    fstdeterminize p1a.fst p1a_determinized.fst
+  # 5) calculate difference between p1d_3word.fst and p1a.fst
+    fstdifference p1d_3word_no_epsilon_determinized.fst p1a_determinized.fst p1e.fst
 
 
 
