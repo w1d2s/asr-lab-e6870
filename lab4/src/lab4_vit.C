@@ -172,8 +172,53 @@ double do_viterbi(const Graph& graph, const matrix<double>& gmmProbs,
   //
   //  The code for calculating the final probability and
   //  the best path is provided for you below.
-
   
+  FrameCell& startCell = curFrame.insert_cell(graph.get_start_state());
+  startCell.assign(0.0f, wordTree.get_root_node());
+
+  for (int t = 0; t < frmCnt; ++t) {
+    nextFrame.clear();
+
+    curFrame.reset_iteration();
+    int curState = curFrame.get_next_state();
+    while (curState >= 0) {
+      FrameCell curCell(curFrame.get_cell_by_state(curState));
+      double srcLogProb = curCell.get_log_prob();
+      auto srcNodeIdx = curCell.get_node_index();
+      
+      int arcCnt = graph.get_arc_count(curState);
+      int arcId = graph.get_first_arc_id(curState);
+
+      for (int arcIdx = 0; arcIdx < arcCnt; ++arcIdx) {
+        Arc arc;
+        arcId = graph.get_arc(arcId, arc);
+        bool hasGmm = (arc.get_gmm() >= 0);
+        int dstState = arc.get_dst_state();
+        
+        double transLogProb = arc.get_log_prob();
+        
+        if (!nextFrame.has_cell(dstState)) {
+          FrameCell& dstCell = nextFrame.insert_cell(dstState);
+          dstCell.assign(g_zeroLogProb, 0);
+        }
+        const FrameCell& oldDstCell = nextFrame.get_cell_by_state(dstState);
+        double dstLogProb = oldDstCell.get_log_prob();
+
+        double tmpLogProb = srcLogProb + transLogProb + acousWgt * gmmProbs(t, arc.get_gmm());
+        if (tmpLogProb > dstLogProb) {
+          FrameCell& newDstCell = nextFrame.insert_cell(dstState);
+          newDstCell.assign(tmpLogProb, srcNodeIdx);
+        }
+      }
+
+      curState = curFrame.get_next_state();
+    }
+
+    if (chart.size1()) {
+      copy_frame_to_chart(curFrame, t, chart);
+    }
+    curFrame.swap(nextFrame);
+  }
 
   //
   //  END_LAB
