@@ -176,7 +176,7 @@ double do_viterbi(const Graph& graph, const matrix<double>& gmmProbs,
   FrameCell& startCell = curFrame.insert_cell(graph.get_start_state());
   startCell.assign(0.0f, wordTree.get_root_node());
 
-  for (int t = 0; t < frmCnt; ++t) {
+  for (int t = 0; t < frmCnt + 1; ++t) {
     nextFrame.clear();
 
     curFrame.reset_iteration();
@@ -197,27 +197,37 @@ double do_viterbi(const Graph& graph, const matrix<double>& gmmProbs,
         
         double transLogProb = arc.get_log_prob();
         
-        if (!nextFrame.has_cell(dstState)) {
-          FrameCell& dstCell = nextFrame.insert_cell(dstState);
+        if (hasGmm && t == frmCnt) {
+          continue;
+        }
+        FrameData& dstFrame = hasGmm ? nextFrame : curFrame;
+
+        if (!dstFrame.has_cell(dstState)) {
+          FrameCell& dstCell = dstFrame.insert_cell(dstState);
           dstCell.assign(g_zeroLogProb, 0);
         }
-        const FrameCell& oldDstCell = nextFrame.get_cell_by_state(dstState);
+        const FrameCell& oldDstCell = dstFrame.get_cell_by_state(dstState);
         double dstLogProb = oldDstCell.get_log_prob();
 
-        double tmpLogProb = srcLogProb + transLogProb + acousWgt * gmmProbs(t, arc.get_gmm());
+        double tmpLogProb = srcLogProb + transLogProb;
+        if (hasGmm && t < frmCnt) {
+          tmpLogProb += acousWgt * gmmProbs(t, arc.get_gmm());
+        }
         if (tmpLogProb > dstLogProb) {
-          FrameCell& newDstCell = nextFrame.insert_cell(dstState);
+          FrameCell& newDstCell = dstFrame.insert_cell(dstState);
           newDstCell.assign(tmpLogProb, srcNodeIdx);
         }
       }
 
       curState = curFrame.get_next_state();
     }
-
-    if (chart.size1()) {
-      copy_frame_to_chart(curFrame, t, chart);
+    
+    if (t < frmCnt) {
+      if (chart.size1()) {
+        copy_frame_to_chart(curFrame, t, chart);
+      }
+      curFrame.swap(nextFrame);
     }
-    curFrame.swap(nextFrame);
   }
 
   //
