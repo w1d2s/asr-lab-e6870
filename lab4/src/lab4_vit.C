@@ -184,7 +184,7 @@ double do_viterbi(const Graph& graph, const matrix<double>& gmmProbs,
     while (curState >= 0) {
       FrameCell curCell(curFrame.get_cell_by_state(curState));
       double srcLogProb = curCell.get_log_prob();
-      auto srcNodeIdx = curCell.get_node_index();
+      auto srcWordTreeIdx = curCell.get_node_index();
       
       int arcCnt = graph.get_arc_count(curState);
       int arcId = graph.get_first_arc_id(curState);
@@ -194,6 +194,10 @@ double do_viterbi(const Graph& graph, const matrix<double>& gmmProbs,
         arcId = graph.get_arc(arcId, arc);
         bool hasGmm = (arc.get_gmm() >= 0);
         int dstState = arc.get_dst_state();
+        unsigned wordIdx = arc.get_word();
+        
+        // note : why null arcs (hasGMM == false) can have word label ?
+        //cout << format("hasGmm : %d, wordIdx : %d\n") % (int)hasGmm % wordIdx;
         
         double transLogProb = arc.get_log_prob();
         
@@ -214,8 +218,12 @@ double do_viterbi(const Graph& graph, const matrix<double>& gmmProbs,
           tmpLogProb += acousWgt * gmmProbs(t, arc.get_gmm());
         }
         if (tmpLogProb > dstLogProb) {
+          int dstWordTreeIdx = srcWordTreeIdx;
+          if (wordIdx > 0) {
+            dstWordTreeIdx = wordTree.insert_node(srcWordTreeIdx, wordIdx); 
+          }
           FrameCell& newDstCell = dstFrame.insert_cell(dstState);
-          newDstCell.assign(tmpLogProb, srcNodeIdx);
+          newDstCell.assign(tmpLogProb, dstWordTreeIdx);
         }
       }
 
