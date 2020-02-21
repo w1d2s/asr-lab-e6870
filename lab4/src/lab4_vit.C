@@ -176,8 +176,11 @@ double do_viterbi(const Graph& graph, const matrix<double>& gmmProbs,
   FrameCell& startCell = curFrame.insert_cell(graph.get_start_state());
   startCell.assign(0.0f, wordTree.get_root_node());
 
+  double thresLogProb = g_zeroLogProb;
+
   for (int t = 0; t < frmCnt + 1; ++t) {
     nextFrame.clear();
+    double nextThresLogProb = g_zeroLogProb;
 
     curFrame.reset_iteration();
     int curState = curFrame.get_next_state();
@@ -185,6 +188,12 @@ double do_viterbi(const Graph& graph, const matrix<double>& gmmProbs,
       FrameCell curCell(curFrame.get_cell_by_state(curState));
       double srcLogProb = curCell.get_log_prob();
       auto srcWordTreeIdx = curCell.get_node_index();
+
+      // do beam pruning
+      if (srcLogProb < thresLogProb) {
+        curState = curFrame.get_next_state();
+        continue;
+      }
       
       int arcCnt = graph.get_arc_count(curState);
       int arcId = graph.get_first_arc_id(curState);
@@ -224,12 +233,17 @@ double do_viterbi(const Graph& graph, const matrix<double>& gmmProbs,
           }
           FrameCell& newDstCell = dstFrame.insert_cell(dstState);
           newDstCell.assign(tmpLogProb, dstWordTreeIdx);
+          // update thresLogProb for cells at next frame
+          if (hasGmm) {
+            nextThresLogProb = std::max(nextThresLogProb, tmpLogProb);
+          }
         }
       }
 
       curState = curFrame.get_next_state();
     }
     
+    thresLogProb = nextThresLogProb - beamLogProb;
     if (t < frmCnt) {
       if (chart.size1()) {
         copy_frame_to_chart(curFrame, t, chart);
