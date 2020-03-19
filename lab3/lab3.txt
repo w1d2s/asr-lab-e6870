@@ -87,7 +87,10 @@
    N_1plus is the number of unique words that follow the history w[i-1: i-n+1].
    When Count_hist >> N_1plus, the P_MLE() will be the dominant term,
    intuitively, that means history w[i-1: i-n+1] appears a lot, but there are only few
-   unique words follow the history.
+   unique words follow the history, which also means the words after history w[i-1: i-n+1]
+   is very diverse.
+   如果只出现1次的词的种类很少，说明历史w[i-1: i-n+1]后面跟着的词很单一，基本都是固定搭配，
+   说明被预测词和历史有着强烈的上下文联系，应该偏向高阶模型。
 
 
 * Describe a situation where P_backoff() will be the dominant term
@@ -96,6 +99,7 @@
 -> When N_1plus ~= Count_hist, the P_backoff() will be the dominant term, that is,
    in average, for each unique word w[i] that follows history w[i-1: i-n+1], the Count_hist 
    assigned to w[i], i.e. Count(w[i], w[i-1: i-n+1]) is small.
+   只出现1次的词的个数越多，以w[i-1: i-n+1]为历史的n-gram的种类越多样，应该偏向低阶模型。
 
 
 * Create the file "p3b.probs" by running "lab3_p3b.sh".
